@@ -1,9 +1,9 @@
 
-// Prvi zadatak
+// 1.
 //Write a program to check if the variable is a number and if it’s a number, check if it is divisible by 2. 
 // If it is, print the result; otherwise, show “X”.
 
-var input = 8; 
+/*var input = 8; 
 
 if ((typeof input) =='number') {
 
@@ -20,18 +20,35 @@ if ((typeof input) =='number') {
     }
 
 }
+*/
 
-
-// Drugi Zadatak
+// 2.
 //Write a conditional statement to find the largest of five numbers. Display the result in the console.
-//Sample Numbers: -5, -2, -6, 0, -1
+//Sample Numbers: -5, -2, -6, -1
 
 var a = -5
 var b = -2
 var c = -6
-var d = -1 
+var d = -7
 
-max = ''
 
-if { }
+  
+if ( a > b && a > c && a > d) {
 
+    var max = a ;
+    console.log("Largest number is: ", max);
+
+} else if ( b > c && b > d && b > a) {
+    
+    var max = b;
+    console.log("Largest number is: ", max);
+
+} else if ( c > a  && c > d && c > b) {
+    
+    var max = b;
+    console.log("Largest number is: ", max);
+} else {
+
+    var max = d;
+    console.log("Largest number is: ", max);
+}
