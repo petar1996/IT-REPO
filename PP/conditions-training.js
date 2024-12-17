@@ -26,10 +26,11 @@ if ((typeof input) =='number') {
 //Write a conditional statement to find the largest of five numbers. Display the result in the console.
 //Sample Numbers: -5, -2, -6, -1
 
-var a = -5
-var b = -2
-var c = -6
-var d = -7
+/*
+var a = -5;
+var b = -2;
+var c = -6;
+var d = -7;
 
 
   
@@ -51,4 +52,77 @@ if ( a > b && a > c && a > d) {
 
     var max = d;
     console.log("Largest number is: ", max);
+
+*/
+
+// 3.
+// Write a conditional statement to sort three numbers.
+
+/*
+
+var x = 15;
+var y = 18;
+var z = 16;
+
+if ( x > y && x > z ) {
+
+    if ( y > z) {
+
+        var first = x;
+        var second = y;
+        var third = z;
+
+        console.log(first, " ", second, " ",third);
+    } else {
+
+        var first = x;
+        var second = z;
+        var third = y;
+
+        console.log(first, " ", second, " ",third);
+
+         }
+
+} else if ( y > x && y > z ) {
+
+    if ( x > z) {
+
+        var first = y
+        var second = x;
+        var third = z;
+
+        console.log(first, " ", second, " ",third);
+    
+    } else {
+
+        var first = y
+        var second = z;
+        var third = x;
+
+        console.log(first, " ", second, " ",third);
+        }
+
+} else if ( z > x && z > x) {
+   
+    if ( y > x ) {
+
+        var first = z
+        var second = y;
+        var third = x;
+
+        console.log(first, " ", second, " ",third);
+
+    } else {
+
+        
+        var first = z
+        var second = x;
+        var third = y
+
+        console.log(first, " ", second, " ",third);
+
+        }
 }
+
+*/
+
