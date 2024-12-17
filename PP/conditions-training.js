@@ -106,7 +106,7 @@ if ( x > y && x > z ) {
    
     if ( y > x ) {
 
-        var first = z
+        var first = z;
         var second = y;
         var third = x;
 
@@ -115,7 +115,7 @@ if ( x > y && x > z ) {
     } else {
 
         
-        var first = z
+        var first = z;
         var second = x;
         var third = y
 
@@ -126,3 +126,30 @@ if ( x > y && x > z ) {
 
 */
 
+
+//4. 
+//Write a conditional statement to find the sign of the product of three numbers. 
+//Display the result in the console with the specified sign.
+
+//My result with function
+
+/*
+var x = 3;
+var y = -7;
+var z = 2;
+
+function product (x , y, z) {
+
+    return x * y * z;
+} 
+
+ if (product(x , y, z) >= 0) {
+
+    console.log("The product is + positive");
+ } else {
+
+    console.log("The product is - negative");
+
+}
+
+*/
