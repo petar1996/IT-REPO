@@ -154,3 +154,28 @@ function product (x , y, z) {
 
 */
 
+
+//5. 
+//Write a program to check if the variable is a number and if it’s a number,
+//check if it is divisible by 2. If it is, print the result; if not, show “X”.
+
+/*
+
+var a = "brate"
+
+if ((typeof a) == 'number') {
+
+    if ( a % 2 === 0 ) {
+
+        console.log(" Deljiv sa dva ")
+    } else {
+
+        console.log(" Nije Deljiv sa dva ")
+    }
+} else {
+
+    console.log(" Nije broj, molim vas upisite ceo broj ")
+
+}
+
+*/
