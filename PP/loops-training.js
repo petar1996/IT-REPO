@@ -87,3 +87,22 @@ console.log("Sum is :", sum ," and product is ", product)
 
 
 
+//5.
+//Write a program that prints the elements of the following array as a single string:
+//var x = ['1', 'A', 'B', "c", "r", true, NaN, undefined];
+
+/*
+
+var x = ['1', 'A', 'B', "c", "r", true, NaN, undefined];
+
+var result = "";
+
+for ( i= 0 ; i < x.length; i++ ) {
+
+    result += x[i];
+
+}
+
+console.log (result);
+
+*/
