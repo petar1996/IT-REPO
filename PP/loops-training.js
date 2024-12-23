@@ -59,24 +59,31 @@ console.log ("Sum is ", sum)
 */
 
 
+//4. 
+//Write a program to compute the sum and product of an array of integers.
+
+/*
 
 var sum = 0;
 var product = 1;
 
-var arr = [1, 2, 3, 4, 5];
+var arr = [1, 2, 3, 4, 5, 6, "bla", 7];
 
-for ( i = 1 ; i < arr.length ; i++) {
+for ( i = 0 ; i < arr.length ; i++) {
 
-    if ( typeof arr[i] =="number") {
+    if ( typeof arr[i] == "number" ) {
         
-        sum = sum + arr[i];
-        proudct= product * arr[i];
-        
-    } else {return false}
+        sum +=arr[i];
+
+        product *= arr[i];
+       
+    } 
 
 }
 
 console.log("Sum is :", sum ," and product is ", product)
+
+*/
 
 
 
