@@ -106,3 +106,50 @@ for ( i= 0 ; i < x.length; i++ ) {
 console.log (result);
 
 */
+
+
+
+//6.
+//Write a program that prints the elements of the following 2D array:
+
+/*
+
+var a = [
+    [1, 2, 1, 24], 
+    [8, 11, 9, 4], 
+    [7, 0, 7, 27]
+ ];
+
+
+
+res = "\n";
+
+for (var i = 0; i < a.length; i++) {
+  for (var j = 0; j < a[i].length; j++) {
+    res += a[i][j] + "\t";
+  }
+ res += "\n";
+}
+
+console.log(res);
+
+*/
+
+
+
+
+// 7.
+//Write a program that outputs the sum of squares of the first 20 numbers.
+
+/*
+
+res=0 
+ 
+for (i=0; i <=20; i++) {
+
+    res += i*i ;
+}
+
+console.log(res)
+
+*/
