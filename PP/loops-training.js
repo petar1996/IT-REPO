@@ -207,3 +207,69 @@ if ( avgSum < 60 && points >=0 ) {
 
 */
 
+
+//9.
+//Write a program that prints all the numbers from 1 to 100 with the following rules:
+//For numbers divisible by 3, print "Fizz" instead of the number.
+//For numbers divisible by 5 (but not 3), print "Buzz".
+//For numbers divisible by both 3 and 5, print "FizzBuzz".
+ 
+/*
+
+for (i = 1 ; i <= 100 ; i++ ) {
+
+    if ( i % 3 === 0 && i % 5 === 0) {
+
+        console.log("FizzBuzz");
+        
+    } else if ( i % 5 === 0 && i % 3 !== 0) {
+
+        
+        console.log("Buzz");
+
+    } else if ( i % 3 === 0 ) {
+
+        console.log ("Fizz");
+    } else {
+
+        console.log(i)
+    }
+}
+
+*/
+
+//10. 
+//Write a program that checks if a given element e is in the array a.
+//Example:
+//Input: e = 3, a = [5, -4.2, 3, 7]
+//Output: yes
+//Input: e = 3, a = [5, -4.2, 18, 7]
+//Output: no
+
+/*
+
+var a = [5, -4.2, 7, 3];
+
+var e = 3;
+
+var contains = false ; // note : var contains need to be boolen false, if you use !== and give contains= true in the begining it doens't work
+
+for ( i = 0 ; i < a.length ; i++) {
+
+    if ( a[i] === e) {
+
+        contains = true ;
+      
+    } 
+}
+if ( contains === true ) {
+
+    console.log("yes");
+
+} else {
+
+console.log ("no");
+
+}
+
+*/
