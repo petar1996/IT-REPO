@@ -160,7 +160,7 @@ console.log(res)
 // the corresponding grade based on the average:
 //David: 80 Marko: 77  Dany: 88  John: 95  Thomas: 68
 
-
+ /*
 
 var sum = 0;
 
@@ -205,5 +205,5 @@ if ( avgSum < 60 && points >=0 ) {
         console.log("The grade is A");
     }
 
-
+*/
 
