@@ -153,3 +153,57 @@ for (i=0; i <=20; i++) {
 console.log(res)
 
 */
+
+
+//8. 
+//Compute the average marks of the following students, then determine
+// the corresponding grade based on the average:
+//David: 80 Marko: 77  Dany: 88  John: 95  Thomas: 68
+
+
+
+var sum = 0;
+
+
+
+var points = [ 80, 77 , 88 , 95, 68];
+
+
+for (i=0 ; i < points.length ; i++) {
+
+    sum += points[i];
+    
+};
+
+var avgSum = sum / points.length;
+
+
+console.log("Average of points:", avgSum);
+
+
+
+
+if ( avgSum < 60 && points >=0 ) {
+
+    console.log("The grade is F ");
+
+    } else if ( avgSum < 70 ) { 
+
+        console.log ("The grade is D ");
+
+
+    } else if ( avgSum < 80 ) {
+
+        console.log("The grade is C ");
+
+    } else if ( avgSum < 90 ) {
+ 
+        console.log("The grade is B")
+
+    } else { 
+ 
+        console.log("The grade is A");
+    }
+
+
+
