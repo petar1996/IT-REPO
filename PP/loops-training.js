@@ -273,3 +273,54 @@ console.log ("no");
 }
 
 */
+
+
+//11.
+//Write a program that multiplies every positive element of a given array by 2.
+//Input: [-3, 11, 5, 3.4, -8]
+//Output: [-3, 22, 10, 6.8, -8]
+
+/*
+
+var a = [-3, 11, 5, 3.4, -8]
+
+for (i=0 ; i < a.length ; i++ ) {
+
+    if ( a[i] > 0) {
+
+        a[i] *= 2;
+    }
+}
+
+console.log (a);
+
+*/
+
+
+//12. 
+//Write a program that finds the minimum of a given array and prints its value and index.
+
+
+var a = [4,-15, 2, 2, -1, 2,-50];
+
+var min= a[a.length-1];
+
+var position= a.length -1;
+
+for (i=a.length-1; i>=0 ; i-- ) {
+
+    if(a[i] < min) {
+
+        min=a[i];
+        position = i;
+    }
+}
+
+console.log(min , position);
+
+
+
+
+
+
+
