@@ -323,9 +323,9 @@ console.log(min , position);
 
 //13. 
 //Write a program that finds the first element larger than the minimum and prints its value.
- // Note : Poorly written task . Meant to say  first 
+ // Note : Poorly written task.
 
-
+/*
 
 var a = [-5,4, 2, 2, -6, 6];
 
@@ -344,8 +344,140 @@ for (i=0 ; i < a.length ; i ++) {
 
 console.log(min);
 
+*/
+
+
+//14.
+//Write a program that checks if a given array is symmetric.
+// An array is symmetric if it can be read 
+// the same way from both left and right.
+//Example:
+//Input: [2, 4, -2, 7, -2, 4, 2]
+//Output: The array is symmetric.
+//Input: [3, 4, 12, 8]
+//Output: The array isn’t symmetric.
+
+
+/*
+
+var array = [2, 4, -2, 7, -2, 4, 2] ;
+
+var mesage = "The array is simetrical";
+
+var reversedArray = [];
+
+for (var i = array.length - 1; i >= 0; i--) {
+  reversedArray[reversedArray.length] = array[i];
+}
+
+for( i = 0 ; i < array.length ; i ++) {
+     
+    if( reversedArray[i] !== array[i]){
+
+        mesage= "The array isn’t symmetric";
+
+    }
+
+}
+console.log(mesage);
+
+*/
 
 
 
+//15.
+//Write a program that intertwines two arrays. You can assume the arrays are of the same length.
+//Input: [4, 5, 6, 2], [3, 8, 11, 9]
+ //Output: [4, 3, 5, 8, 6, 11, 2, 9]
+
+
+var a= [4, 5, 6, 2];
+var b= [3, 8, 11, 9];
+
+var newArray=[];
+
+for (i=0 ; i < a.length ; i++) {
+
+   newArray[newArray.length] = a[i];
+   newArray[newArray.length]= b[i] ;
+
+}
+
+console.log(newArray);
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Check if two arrays are indetical 
+/*
+var a = [1, 4, -2, 7, -2, 4, 2, 3] ;
+
+var b = [2, 4, -2, 7, -2, 4, 2, 3];
+
+
+if ( a.length === b.length) {
+
+    for( i = 0 ; i < a.length ; i++) {
+
+        if( a[i] === b [i]) {
+
+            continue;
+
+        } else {
+
+            console.log("Arrays are not simmetrical");
+            break;
+        }
+    }
+
+
+} else {
+
+    console.log("Arrays are not simmetrical"); 
+}
+
+if ( a.length === b.length && a[i] === b [i]) {
+
+
+    console.log(" Arrays are simmetrical");
+}
+*/
+
+
+
+
+
+ 
 
 
