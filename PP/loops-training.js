@@ -411,12 +411,12 @@ console.log(newArray);
 
 
 
-//16
+//16.
 //Write a program that concatenates two arrays.
 //Input: [4, 5, 6, 2], [3, 8, 11, 9]
 //Output: [4, 5, 6, 2, 3, 8, 11, 9]
 
-
+/*
 
 var a =[4, 5, 6, 2];
 
@@ -443,9 +443,33 @@ for (i=0 ; i < a.length ; i++) {
  console.log (newArray);
 
 
+*/
 
 
- 
+//17.
+//Write a program that deletes a given element e from the array a.
+//Input: e = 2, a = [4, 6, 2, 8, 2, 2]
+//Output: [4, 6, 8]
+
+var e = 2;
+
+var a = [4, 6, 2, 8, 2, 2]; 
+
+
+for (i=0 ; i < a.length ; i ++) {
+
+
+    if( a[i] === e){
+
+
+       a.splice(i,1);
+       i--;
+
+    }
+}
+
+
+console.log(a);
 
 
 
