@@ -390,6 +390,7 @@ console.log(mesage);
 //Input: [4, 5, 6, 2], [3, 8, 11, 9]
  //Output: [4, 3, 5, 8, 6, 11, 2, 9]
 
+/*
 
 var a= [4, 5, 6, 2];
 var b= [3, 8, 11, 9];
@@ -405,8 +406,41 @@ for (i=0 ; i < a.length ; i++) {
 
 console.log(newArray);
 
+*/
 
 
+
+
+//16
+//Write a program that concatenates two arrays.
+//Input: [4, 5, 6, 2], [3, 8, 11, 9]
+//Output: [4, 5, 6, 2, 3, 8, 11, 9]
+
+
+
+var a =[4, 5, 6, 2];
+
+var b =[3, 8, 11, 9];
+
+var newArray=[];
+
+
+for (i=0 ; i < a.length ; i++) {
+
+    newArray[newArray.length] = a[i];
+    
+ 
+ }
+
+
+ for (i=0 ; i < a.length ; i++) {
+
+    newArray[newArray.length] = b[i];
+    
+ 
+ }
+
+ console.log (newArray);
 
 
 
@@ -438,7 +472,7 @@ console.log(newArray);
 
 
 
-
+// Additional task 
 // Check if two arrays are indetical 
 /*
 var a = [1, 4, -2, 7, -2, 4, 2, 3] ;
@@ -456,7 +490,7 @@ if ( a.length === b.length) {
 
         } else {
 
-            console.log("Arrays are not simmetrical");
+            console.log("Arrays are not identical");
             break;
         }
     }
@@ -464,13 +498,13 @@ if ( a.length === b.length) {
 
 } else {
 
-    console.log("Arrays are not simmetrical"); 
+    console.log("Arrays are not identical "); 
 }
 
 if ( a.length === b.length && a[i] === b [i]) {
 
 
-    console.log(" Arrays are simmetrical");
+    console.log(" Arrays are identical;");
 }
 */
 
