@@ -157,6 +157,7 @@ console.log("This is the number of ocurrences", countOccurrences(a));
 //Sum of Odd Elements
 //Write a program that calculates the sum of odd elements of a given array.
 
+/*
 
 function sumOdd (array) {
 
@@ -177,3 +178,45 @@ var a = [1,2,3,4,5,6,7];
 
 
 console.log("Sum of Odd number in given array is", sumOdd(a));
+
+*/
+
+
+//10.
+//Count Letter Occurrences
+//Write a program that calculates the number of appearances of a letter a in a given string.
+// Modify the program so it calculates the number of both letters a and A.
+
+/*
+
+function numberOfA(array) {
+
+    sum= 0;
+
+    for (i = 0 ; i < array.length ; i++ ){
+
+        if ( array[i] === "A" || array[i] ==="a") {
+
+        sum += 1;    
+
+        }
+
+    }
+
+    return sum;
+
+}
+
+var a ="Arctic Monkeys are a good band";
+
+
+console.log("The number of occurances of character A in given string is",numberOfA(a) );
+
+*/
+
+
+
+
+
+
+
