@@ -91,6 +91,7 @@ console.log (isThreeDigits(1000));
 //Write a program that calculates an arithmetic mean of four numbers.
 
 
+/*
 
 function averageValue() {
 
@@ -111,4 +112,40 @@ function averageValue() {
 
 console.log("Average value is", averageValue(1,2,3,4));
 
+*/
 
+
+
+
+//8.
+//Count Occurrences in an Array
+//Write a program that calculates the number of appearances of a given number in a given array.
+//Inputs: a = [2, 4, 7, 8, 7, 7, 1], e = 7
+//Result: 3
+
+
+
+function countOccurrences(array) {
+
+    var number= 7;
+    var occurrences = 0;
+    
+    for (i= 0; i < array.length ; i++) {
+
+        if(array [i] === number){
+
+            occurrences += 1 ;
+        }
+    
+    }
+
+    return occurrences;
+
+}
+
+
+
+
+var array1 = [1, 1, 2 , 5, 7 , 7 , 8, 7 ] ;
+
+console.log("this is the number of ocurrences", countOccurrences(array1));
