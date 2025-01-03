@@ -451,6 +451,9 @@ for (i=0 ; i < a.length ; i++) {
 //Input: e = 2, a = [4, 6, 2, 8, 2, 2]
 //Output: [4, 6, 8]
 
+/*
+
+
 var e = 2;
 
 var a = [4, 6, 2, 8, 2, 2]; 
@@ -470,6 +473,14 @@ for (i=0 ; i < a.length ; i ++) {
 
 
 console.log(a);
+
+*/
+
+
+//18.
+//
+//
+
 
 
 
