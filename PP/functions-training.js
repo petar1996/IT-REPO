@@ -126,14 +126,16 @@ console.log("Average value is", averageValue(1,2,3,4));
 //Inputs: a = [2, 4, 7, 8, 7, 7, 1], e = 7
 //Result: 3
 
+/*
+
 function countOccurrences(array) {
 
-    var number= 7;
+    var e = 7;
     var occurrences = 0;
     
     for (i= 0; i < array.length ; i++) {
 
-        if(array [i] === number){
+        if (array [i] === e ){
 
             occurrences += 1 ;
         }
@@ -144,6 +146,34 @@ function countOccurrences(array) {
 
 }
 
-var a = [1, 1, 2 , 5, 7 , 7 , 8, 7 ] ;
+var a = [2, 4, 7, 8, 7, 7, 1] ;
 
 console.log("This is the number of ocurrences", countOccurrences(a));
+
+*/
+
+
+//9.
+//Sum of Odd Elements
+//Write a program that calculates the sum of odd elements of a given array.
+
+
+function sumOdd (array) {
+
+    sum=0;
+
+    for(i=0 ; i < array.length ; i++) {
+
+        if(array[i] % 2 !==0) {
+
+            sum += array[i];
+        }
+    }
+
+    return sum;
+}
+
+var a = [1,2,3,4,5,6,7];
+
+
+console.log("Sum of Odd number in given array is", sumOdd(a));
