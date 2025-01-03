@@ -2,7 +2,7 @@
 //Maximum of Two Numbers
 //Write a program that calculates the maximum of two given numbers.
 
-
+/*
 
 function max(a,b) {
 
@@ -27,5 +27,35 @@ function max(a,b) {
 var result = max(6,6)
 
 console.log(result);
+
+*/
+
+
+//2.
+//Odd Number Check
+//Write a program that checks if a given number is odd.
+
+
+function  checkOddNumber(a) {
+
+
+    var message = "Number is Odd";
+
+    if ( a % 2 === 0) {
+
+        message ="Number is not Odd";
+
+    }
+
+    return message;
+
+}
+
+console.log(checkOddNumber(20));
+
+
+
+
+
 
 
