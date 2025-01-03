@@ -61,6 +61,8 @@ console.log(checkOddNumber(20));
 //Three-Digit Number Check
 //Write a program that checks if a given number is a three-digit long number.
 
+/*
+
 
 function isThreeDigits(a) {
 
@@ -80,5 +82,33 @@ function isThreeDigits(a) {
 
 console.log (isThreeDigits(1000));
 
+*/
+
+
+
+//4.
+//Arithmetic Mean
+//Write a program that calculates an arithmetic mean of four numbers.
+
+
+
+function averageValue() {
+
+    var total = 0;
+    
+    for( i = 0 ; i < arguments.length ; i ++) {
+
+
+        total += arguments[i];
+    }
+
+    var result = total / arguments.length;
+
+    return result;
+
+}
+
+
+console.log("Average value is", averageValue(1,2,3,4));
 
 
