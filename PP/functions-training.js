@@ -35,6 +35,7 @@ console.log(result);
 //Odd Number Check
 //Write a program that checks if a given number is odd.
 
+/*
 
 function  checkOddNumber(a) {
 
@@ -53,9 +54,31 @@ function  checkOddNumber(a) {
 
 console.log(checkOddNumber(20));
 
+*/
 
 
+//3.
+//Three-Digit Number Check
+//Write a program that checks if a given number is a three-digit long number.
 
+
+function isThreeDigits(a) {
+
+
+    if ( a >= 100 && a <=999 ) {
+
+        var message ="Number has three digits";
+
+    } else {
+
+        message ="Number doesn't have 3 digits";
+    }
+
+    return message;
+}
+
+
+console.log (isThreeDigits(1000));
 
 
 
