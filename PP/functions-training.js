@@ -216,7 +216,264 @@ console.log("The number of occurances of character A in given string is",numberO
 
 
 
+//11.
+//Write a program that concatenates a given string a given number of times. For example,
+//if "abc" and 4 are given values, the program prints out:
+//abcabcabcabc
+
+/*
+
+function conString(a,b) {
+
+    var result = "";
+    
+
+    for (i=0; i < b; i ++) { 
+
+        
+        result += a ;
+        
+
+    }
+
+    return result;
+
+}
+
+console.log(conString("abc", 4));
+
+*/
+
+
+//12.
+// Check if Input is a String
+//Write a function to check whether the input is a string or not.
+//"My random string" -> true
+//12 -> false
+
+/*
+
+function checkString (input) {
+
+    var result ="False";
+
+    if((typeof input) == 'string') {
+
+        result ="True";
+    
+}
+    return result;
+
+}
+
+var n=7;
+
+
+console.log(checkString(n));
+
+
+*/
 
 
 
+//13.
+//Check if String is Blank
+//Write a function to check whether a string is blank or not.
+//"My random string" -> false
+//" " -> true
+//12 -> false
+//false -> false
 
+
+/*
+
+function blankStr (input) {
+
+    if((typeof input) !== 'string'){
+
+        return false;
+    };
+
+    for (i = 0 ; i < input.length ; i++) {
+
+        if ( input[i] !==" "){
+
+            return false;    
+        }
+    }
+
+
+    return true;
+}
+
+var n="";
+
+console.log(blankStr(n));
+
+*/
+
+
+//14.
+//Write a function that concatenates a given string n times (default is 1).
+//"Ha" -> "Ha"
+//"Ha", 3 -> "HaHaHa"
+
+/*
+
+function conString(a,b) {
+
+    var result ="";
+    var i = 0 ;
+
+    do {
+
+      result +=a;
+      i++;
+    }
+
+    while(i < b);
+
+    return result;
+}
+
+
+var n ="bla";
+
+var m = 3;
+
+
+console.log(conString(n,m));
+
+*/
+
+
+
+//15. 
+//Write a function to count the number of letter occurrences in a string.
+//"My random string", "n" -> 2
+
+/*
+
+function letterOcc (a,b) {
+
+    sum=0;
+
+    for( i = 0; i < a.length ; i++) {
+
+        if( a[i] === b) {
+
+            sum += 1;
+        }
+
+    }
+
+    return sum;
+}
+
+var n = "YYYY nn OO p";
+
+var m = "p";
+
+console.log(letterOcc(n,m));
+
+*/
+
+
+//16.
+//Find First Character Position
+//Write a function to find the position of the first occurrence of a character in a string. The result should be the position of the character. 
+// If there are no occurrences of the character, the function should return -1.
+
+/*
+
+function firstCharOccur(a,b) {
+
+    for( i = 0 ; i < a.length ; i++) {
+
+        if ( a[i] === b) {
+
+            return i;
+        }
+
+    }
+
+    return -1;
+
+}
+
+
+var firstCharOcc = firstCharOccur("Petar", "e");
+
+console.log (firstCharOcc);
+
+*/
+
+
+//17.
+//Task 17: Find Last Character Position
+//Write a function to find the position of the last occurrence of a character in a string. 
+// The result should be in human numeration form.
+//If there are no occurrences of the character, the function should return -1.
+
+/*
+
+function lastCharOccur(a,b) {
+
+    for( i = a.length; i > 0 ; i--) {
+
+        if ( a[i] === b) {
+
+            return i + 1;
+        }
+
+    }
+
+    return -1;
+
+}
+
+var lastCharOcc = lastCharOccur("Petar", "l");
+
+console.log (lastCharOcc);
+
+*/
+
+
+
+//18.
+//Convert String to Array
+//Write a function to convert a string into an array. 
+//Spaces in a string should be represented as null in the new array.
+
+//"My random string" -> ["M", "y", null, "r", "a"]
+//"Random" -> ["R", "a", "n", "d", "o", "m"]
+
+
+/*
+
+function stringToArray(a) {
+
+    var newString = [];
+
+    for (i = 0 ; i < a.length ; i ++) {
+
+        if (a[i] !== " ") {
+
+            newString[i]= a[i];
+
+        } else {
+
+            newString[i]="null";
+
+        }
+    }
+    return newString;
+
+}
+
+var final = stringToArray("Nocturnal Animals")
+
+
+console.log(final);
+
+*/
