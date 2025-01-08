@@ -588,3 +588,70 @@ var final = threecommaString("Whatever man for real", 8);
 console.log(final);
 
 */
+
+
+//22.
+//Convert Array of Strings to Numbers
+//Write a function that converts an array of strings into an array of numbers.
+//Filter out all non-numeric values.
+//["1", "21", undefined, "42", "1e+3", Infinity] -> [1, 21, 42, 1000]
+
+/*
+
+function convertStrToNum (a){
+
+    var result="";
+
+    for (i=0, i<a.length; i++)
+
+
+}
+
+
+*/
+
+
+//23.
+// Retirement Calculator
+//Write a function to calculate how many years are left until retirement based on the year of birth.
+ //Retirement is at the age of 65 for men and 60 for women. If someone is already retired, display a proper message.
+
+ /*
+
+
+function retirement(gen,age){
+
+    
+    if(gen === "M" || gen === "Male"){
+
+        var result = 65 - age;
+
+    } else if (gen ==="F" || gen==="Female") {
+
+        result = 60 - age ;
+      
+     };
+
+
+
+    if (result <= 0){
+
+        result="You are ready for retirement";
+
+    } else if (age <= 0) {
+
+        result ="Your age input is invalid";
+    };
+
+
+        
+    return result;
+
+};
+
+var final = retirement("Male",7);
+
+console.log("Below is the message with the number of years to your retirement: \n", final);
+
+
+*/
