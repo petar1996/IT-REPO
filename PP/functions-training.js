@@ -481,36 +481,39 @@ console.log(final);
 
 
 //19.
+//Check for Prime Number
+//Write a function that accepts a number as a parameter and checks if the number is prime or not.
+//Note: A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
 
 
+/*
 
 function checkPrime(givenNum){
+ 
+var check = "it's a Prime Number"
 
-var checkMesagge = "Given Number is Prime Number";
+if (givenNum <= 1) {
 
-if (givenNum < 1) {
-
-     checkMesagge = "It's not a prime number";
+     check = "It's not a Prime Number";
 }
 
-for ( i=2; i > givenNum ; i++){
+for( i=2; i < givenNum ; i++){
 
     if( givenNum % i === 0 ) {
 
-        checkMesagge = "It's not a prime number";
+        check = "It's not a Prime Number";
 
     }
 
 }
 
-return checkMesagge;
+return check;
 
 }
 
-var num = 7;
+var num = checkPrime(7);
 
-console.log(checkPrime(num));
+console.log(num);
 
 
-
-console.log("dobro vece");
+*/
