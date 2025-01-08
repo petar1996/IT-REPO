@@ -517,3 +517,74 @@ console.log(num);
 
 
 */
+
+
+//20.
+//Write a function that replaces spaces in a string with a provided separator. 
+//If a separator is not provided, use a dash ("-") as the default separator.
+//"My random string", "_" -> "My_random_string"
+//"My random string", "+" -> "My+random+string"
+//"My random string" -> "My-random-string"
+
+/*
+
+function putSeparator (a,separator){
+
+    result="";
+
+    for( i = 0 ; i < a.length ; i++){
+
+        if( a[i] ===" "){
+
+            result += separator;
+    
+        } else {
+
+            result += a[i];
+        }
+    }
+
+return result;
+
+}
+var defsep="-"
+
+var result= putSeparator("BAs je lep dan", defsep);
+
+console.log(result);
+
+*/
+
+
+//21.
+//Shorten a String
+//Write a function to get the first n characters and add ... at the end of the 
+//newly created string
+
+/*
+
+function threecommaString (myString,n) {
+
+    result="";
+
+    for (i=0 ; i < n ; i ++) {
+
+           result += myString[i]
+
+
+
+    }
+
+    result += "...";
+
+
+    return result;
+
+
+}
+
+var final = threecommaString("Whatever man for real", 8);
+
+console.log(final);
+
+*/
