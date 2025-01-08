@@ -477,3 +477,40 @@ var final = stringToArray("Nocturnal Animals")
 console.log(final);
 
 */
+
+
+
+//19.
+
+
+
+function checkPrime(givenNum){
+
+var checkMesagge = "Given Number is Prime Number";
+
+if (givenNum < 1) {
+
+     checkMesagge = "It's not a prime number";
+}
+
+for ( i=2; i > givenNum ; i++){
+
+    if( givenNum % i === 0 ) {
+
+        checkMesagge = "It's not a prime number";
+
+    }
+
+}
+
+return checkMesagge;
+
+}
+
+var num = 7;
+
+console.log(checkPrime(num));
+
+
+
+console.log("dobro vece");
