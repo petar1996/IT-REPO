@@ -479,10 +479,6 @@ console.log(final);
 */
 
 
-<<<<<<< HEAD
-//19.
-=======
-
 //19.
 //Check for Prime Number
 //Write a function that accepts a number as a parameter and checks if the number is prime or not.
@@ -658,4 +654,96 @@ console.log("Below is the message with the number of years to your retirement: \
 
 
 */
->>>>>>> ff76da9d99387ce0252ab87c4faee94190acc7d2
+
+
+
+
+
+
+
+
+
+
+
+
+
+//25.
+// Insert String Within a String
+//Write a program to insert a string within another string at a particular position (default is the beginning).
+//"My random string", "JS " -> "JS My random string"
+//"My random string", "JS ", 10 -> "My random JS string"
+
+
+/*
+
+
+function insertString (aString,bString, position) {
+
+    if ( position === undefined || position === null) {
+
+        position=0;
+    }
+
+    result ="";
+
+    for (i=0 ; i < position; i++) {
+
+        result += aString[i];
+
+    }
+
+    result += bString;
+
+    for ( i= position ; i < aString.length ; i++) {
+
+        
+        result += aString[i]
+    }
+
+return result;
+
+}
+
+var final = insertString("abrakadabra","AVADAKEDAVRA", 4);
+
+console.log(final)
+
+*/
+
+
+//26.
+//Join Array Elements into a String
+//Write a program to join all elements of the array into a string, skipping elements that are :
+// undefined, null, NaN, or Infinity.
+//[NaN, 0, 15, false, -22, '', undefined, 47, null]
+
+/*
+
+function joinArrayToString (a) {
+
+
+    result="";
+
+
+    for (i=0; i<a.length; i++){
+
+        if(a[i] !== undefined && a[i] !== null && a[i] === a[i] && a[i] !== Infinity && a[i] !==""){
+
+            result += a[i] + " ";
+ 
+        }
+         
+    }
+ 
+return result ;
+}
+
+
+var final = joinArrayToString (["bla", NaN, "Petar", Infinity,"",undefined, "ha", null,]);
+
+console.log(final);
+
+*/
+
+
+//
