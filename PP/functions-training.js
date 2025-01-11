@@ -479,4 +479,183 @@ console.log(final);
 */
 
 
+<<<<<<< HEAD
 //19.
+=======
+
+//19.
+//Check for Prime Number
+//Write a function that accepts a number as a parameter and checks if the number is prime or not.
+//Note: A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+
+/*
+
+function checkPrime(givenNum){
+ 
+var check = "it's a Prime Number"
+
+if (givenNum <= 1) {
+
+     check = "It's not a Prime Number";
+}
+
+for( i=2; i < givenNum ; i++){
+
+    if( givenNum % i === 0 ) {
+
+        check = "It's not a Prime Number";
+
+    }
+
+}
+
+return check;
+
+}
+
+var num = checkPrime(7);
+
+console.log(num);
+
+
+*/
+
+
+//20.
+//Write a function that replaces spaces in a string with a provided separator. 
+//If a separator is not provided, use a dash ("-") as the default separator.
+//"My random string", "_" -> "My_random_string"
+//"My random string", "+" -> "My+random+string"
+//"My random string" -> "My-random-string"
+
+/*
+
+function putSeparator (a,separator){
+
+    result="";
+
+    for( i = 0 ; i < a.length ; i++){
+
+        if( a[i] ===" "){
+
+            result += separator;
+    
+        } else {
+
+            result += a[i];
+        }
+    }
+
+return result;
+
+}
+var defsep="-"
+
+var result= putSeparator("BAs je lep dan", defsep);
+
+console.log(result);
+
+*/
+
+
+//21.
+//Shorten a String
+//Write a function to get the first n characters and add ... at the end of the 
+//newly created string
+
+/*
+
+function threecommaString (myString,n) {
+
+    result="";
+
+    for (i=0 ; i < n ; i ++) {
+
+           result += myString[i]
+
+
+
+    }
+
+    result += "...";
+
+
+    return result;
+
+
+}
+
+var final = threecommaString("Whatever man for real", 8);
+
+console.log(final);
+
+*/
+
+
+//22.
+//Convert Array of Strings to Numbers
+//Write a function that converts an array of strings into an array of numbers.
+//Filter out all non-numeric values.
+//["1", "21", undefined, "42", "1e+3", Infinity] -> [1, 21, 42, 1000]
+
+/*
+
+function convertStrToNum (a){
+
+    var result="";
+
+    for (i=0, i<a.length; i++)
+
+
+}
+
+
+*/
+
+
+//23.
+// Retirement Calculator
+//Write a function to calculate how many years are left until retirement based on the year of birth.
+ //Retirement is at the age of 65 for men and 60 for women. If someone is already retired, display a proper message.
+
+ /*
+
+
+function retirement(gen,age){
+
+    
+    if(gen === "M" || gen === "Male"){
+
+        var result = 65 - age;
+
+    } else if (gen ==="F" || gen==="Female") {
+
+        result = 60 - age ;
+      
+     };
+
+
+
+    if (result <= 0){
+
+        result="You are ready for retirement";
+
+    } else if (age <= 0) {
+
+        result ="Your age input is invalid";
+    };
+
+
+        
+    return result;
+
+};
+
+var final = retirement("Male",7);
+
+console.log("Below is the message with the number of years to your retirement: \n", final);
+
+
+*/
+>>>>>>> ff76da9d99387ce0252ab87c4faee94190acc7d2
