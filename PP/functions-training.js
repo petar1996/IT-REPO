@@ -586,7 +586,7 @@ var final = threecommaString("Whatever man for real", 8);
 
 console.log(final);
 
-*/
+
 
 
 //22.
@@ -746,4 +746,176 @@ console.log(final);
 */
 
 
+//27.
+
 //
+
+/*
+
+function falsyValues(a) {
+    var result = [];
+
+    for (var i = 0; i < a.length; i++) {
+        if (a[i]) {                                         // if (a[i])  ___ this is most imprtant thing
+            result[result.length] = a[i];                   // with this we are making sure that 
+        };                                                  // only truthy values enter the new array
+                                                            // in this case result         
+    };
+
+    return result;
+};
+
+var falsyValuesResult = falsyValues([1, 'hello', '', 42, false, undefined, null, true, NaN]);
+console.log("Array with no falsy values:", falsyValuesResult);
+
+*/
+
+
+//28.
+//Reverse a Number
+//Write a function that reverses a number. The result must be a number.
+//12345 -> 54321 // Output must be a number
+
+/*
+
+function reverseNumber (a) {
+
+    
+
+    var result="";
+
+    for (i = a.length - 1 ; i > 0 ;i--) {
+
+        result += a[i];
+    }   
+
+    result = +result;
+
+    return result;
+
+
+};
+
+
+
+var final = reverseNumber("12345");
+
+console.log(final);
+
+console.log(typeof(final));
+
+*/
+
+
+//29.
+//Get the Last Element of an Array
+//Write a function to get the last element of an array. 
+//Passing a parameter n will return the last n elements of the array.
+//[7, 9, 0, -2] -> -2
+//[7, 9, 0, -2], 2 -> [0, -2]
+
+/*
+
+function getLastElement (a, n) {
+
+
+    var reverseA= [];
+
+    for (i = a.length - 1 ; i >= 0 ;i--) {
+
+        reverseA[reverseA.length] += a[i];
+    }   
+
+     var result= [];
+
+    
+
+
+return result;
+
+}
+
+
+var final = getLastElement([1,2,4], 1);
+
+console.log(final);
+
+
+*/
+
+
+
+//30.
+//Create Pre-Filled Array
+//Write a function to create a 
+//specified number of elements with a pre-filled numeric value in the array.
+// 6, 0 -> [0, 0, 0, 0, 0, 0]
+// 2, "none" -> ["none", "none"]
+// 2 -> [null, null]
+
+/*
+
+
+function predefientArray (n,b) {
+
+var a = [];
+
+for( i = 0 ; i < n ; i++){
+
+
+    a[a.length] = b;
+
+}
+
+return a;
+
+};
+
+var final = predefientArray(2,"none");
+
+console.log(final);
+
+*/
+
+
+
+
+//31.
+//Check if a Number is Perfect
+//Write a function that says whether a number is perfect
+//28 -> 28 is a perfect number
+//A perfect number is a positive integer equal to the sum of its proper positive divisors (excluding itself). 
+//For example, 6 and 28 are perfect numbers.
+
+
+/*
+    
+
+
+
+
+
+*/
+
+
+
+
+//32.
+//Write a function to find a word within a string.
+//'The quick brown fox', 'fox' -> "'fox' was found 1 times"
+//'aa bb cc dd aa', 'aa' -> "'aa' was found 2 times"
+
+
+function wordInString (a,b) {
+
+
+    for(i = 0 ; i < a.length ; i++ ) {
+
+        
+
+
+
+    }
+
+
+}
