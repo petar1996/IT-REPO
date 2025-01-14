@@ -886,16 +886,51 @@ console.log(final);
 //28 -> 28 is a perfect number
 //A perfect number is a positive integer equal to the sum of its proper positive divisors (excluding itself). 
 //For example, 6 and 28 are perfect numbers.
-
+ 
 
 /*
+
+function perfectNumber(number) {
+
+    if ( number <= 0) {
+
+        console.log ("Number is zero or below, please try again");
+        return;
+    }
+
+   var sum= 0;
+   var check ="is perfect"
+
+    for( i = 1 ; i < number ; i++) {
+        
+        if( number % i === 0 ) {
+
+            sum += i;
+        }
+
+}
+
+    if ( sum === number ) {
+
+        return check;
+   
+    } else {
+
+
+        return check = "is not perfect";
+    }
+
+}
+
+
+
+var final = 6;
+
+console.log(final, perfectNumber(final));
     
-
-
-
-
-
 */
+
+
 
 
 
@@ -905,12 +940,25 @@ console.log(final);
 //'The quick brown fox', 'fox' -> "'fox' was found 1 times"
 //'aa bb cc dd aa', 'aa' -> "'aa' was found 2 times"
 
-
+/*
 function wordInString (a,b) {
 
+    var check = "";
 
     for(i = 0 ; i < a.length ; i++ ) {
 
+        if ( a[i] === b[0]){
+
+            for ( j= 0 ; j < b.length; j++) {
+
+                if ( a[i] === b[j] ) {
+
+                    check[check.length] = b[j];
+                }
+
+
+            }
+        }
         
 
 
@@ -919,3 +967,8 @@ function wordInString (a,b) {
 
 
 }
+
+*/
+
+
+//33.
