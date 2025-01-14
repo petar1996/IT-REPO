@@ -972,3 +972,42 @@ function wordInString (a,b) {
 
 
 //33.
+
+/*
+function hideEmailAddress(email) {
+    let result = '';
+    let atPosition = -1;         // here the most important thing is at position to find the index of "@"
+
+    // Loop through the email to find the position of '@'
+    for (let i = 0; i < email.length; i++) {
+        if (email[i] === '@') {            // this and the line below is how we
+                                             // find the position of @
+             atPosition = i;
+            break;  // Exit the loop once we find the '@'
+        }
+    }
+
+    // Build the first part of the email with the first 3 characters
+    for (let i = 0; i < atPosition; i++) {
+        if (i < 3) {
+            result += email[i];  // Keep the first 3 characters
+        } else {
+            break;  // Stop once we reach the 3rd character
+        }
+    }
+
+    // Add the '...' after the first 3 characters of the username
+    result += '...';
+
+    // Add the domain part to the result
+    for (let i = atPosition; i < email.length; i++) {
+        result += email[i];  // Add the domain part unchanged
+    }
+
+    return result;
+}
+
+// Example usage:
+console.log(hideEmailAddress("myemailaddress@bgit.rs")); 
+
+*/
