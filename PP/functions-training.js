@@ -1011,3 +1011,51 @@ function hideEmailAddress(email) {
 console.log(hideEmailAddress("myemailaddress@bgit.rs")); 
 
 */
+
+
+//34.Find the Most Frequent Item
+//Write a program to find the most frequent item in an array.
+//[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
+
+/*
+
+function mostFrequent (a) {
+
+    var maxfreq = 1;
+    var curfreq = 0;
+
+    var freqelement;
+
+    for (i=0 ; i < a.length ; i ++) {
+
+        for ( j = i ; j < a.length ; j++ ) {
+
+            if ( a[i] === a [j]) {
+
+                curfreq ++ ;
+            };
+
+            if ( curfreq > maxfreq ) {
+
+                maxfreq = curfreq
+
+                freqelement = a[i]
+
+            };
+
+        };
+    
+        
+        curfreq = 0;
+
+    };
+
+    return freqelement;
+
+};
+
+var final = mostFrequent (["petar","a","6","petar","a","a","petar"]);
+
+console.log ("Most frequent element is", final);
+
+*/
