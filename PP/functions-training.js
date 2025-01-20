@@ -1059,3 +1059,105 @@ var final = mostFrequent (["petar","a","6","petar","a","a","petar"]);
 console.log ("Most frequent element is", final);
 
 */
+
+
+//35. 
+// Check Element in Array
+//Write a program that checks if a given element e is in the array a.
+//Input:  e = 3, a = [5, -4.2, 3, 7]
+//Output: yes
+//Input:  e = 3, a = [5, -4.2, 18, 7]
+//Output: no
+
+/*
+
+function checkElement (a,e) {
+
+    check = "no";
+
+    for ( i = 0 ; i < a.length ; i++) {
+
+        if ( a[i] === e) {
+
+            check = "yes";
+        }
+
+
+    }
+
+    return check;
+}
+
+var final = checkElement(["a","e",1],"b");
+
+console.log(final);
+
+*/
+
+
+//36.
+//Multiply Positive Elements by 2
+//Write a program that multiplies every positive element of a given array by 2.
+//Input array: [-3, 11, 5, 3.4, -8]
+//Output array: [-3, 22, 10, 6.8, -8]
+
+
+/*
+function multiplyPositive (a) {
+
+    for ( i = 0 ; i < a.length ; i ++) {
+
+        if ( a[i] > 0) {
+
+            a[i] *= 2;
+        }
+
+    }
+
+return a;
+}
+
+var final = multiplyPositive([1, -5 ,-7, 1, 10 ])
+
+console.log(final);
+
+*/
+
+
+//37.
+//Write a program that finds the minimum of a given array and prints out its value and index.
+//Input array: [4, 2, 2, -1, 6]
+//Output: -1, 3
+
+/*
+
+function minimumAndIndex(a){
+
+var min = a[a.length-1];
+
+var position = a.length -1 ;
+
+for (i = a.length -1 ; i >= 0 ; i --){
+
+    if ( a[i] < min) {
+
+        min = a[i];
+
+        position = i;
+    };
+};
+
+var result = [min, position];
+
+return result;
+
+};
+
+var final = minimumAndIndex([ -20,1,-2, -210,-10,-6, -21]);
+
+console.log (final);
+
+*/
+
+
+//38.

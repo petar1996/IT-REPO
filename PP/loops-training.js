@@ -300,7 +300,7 @@ console.log (a);
 //12. 
 //Write a program that finds the minimum of a given array and prints its value and index.
 
-/*
+
 var a = [4,-15, 2, 2, -1, 2,-50];
 
 var min= a[a.length-1];
@@ -312,13 +312,13 @@ for (i=a.length-1; i>=0 ; i-- ) {
     if(a[i] < min) {
 
         min=a[i];
-        position = i;
+        position = i + 1;
     }
 }
 
 console.log(min , position);
 
-*/
+
 
 
 //13. 
