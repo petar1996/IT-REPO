@@ -655,3 +655,45 @@ console.log("Below is the message with the number of years to your retirement: \
 
 
 */
+
+
+//24.
+
+
+function humanizeNUmber(a){
+
+if(typeof a !== "number"){
+
+var message = "You didn't enter a number \n Please try again"
+
+return message;
+
+};
+
+if (a === 1) {
+
+    a+= "st";
+
+} else if ( a === 2) {
+
+    a += "nd";
+
+} else if ( a === 3) {
+
+    a+= "rd";
+} else if ( a > 3){
+
+
+    a+= "th"
+} else {
+
+    mesage = "Your input is zero or invalid";
+  return mesage;
+}
+
+return a;
+}
+
+var final = humanizeNUmber("bla bla");
+
+console.log(final);
