@@ -479,7 +479,6 @@ console.log(final);
 */
 
 
-
 //19.
 //Check for Prime Number
 //Write a function that accepts a number as a parameter and checks if the number is prime or not.
@@ -587,7 +586,7 @@ var final = threecommaString("Whatever man for real", 8);
 
 console.log(final);
 
-*/
+
 
 
 //22.
@@ -657,43 +656,508 @@ console.log("Below is the message with the number of years to your retirement: \
 */
 
 
-//24.
 
 
-function humanizeNUmber(a){
 
-if(typeof a !== "number"){
 
-var message = "You didn't enter a number \n Please try again"
 
-return message;
+
+
+
+
+
+
+//25.
+// Insert String Within a String
+//Write a program to insert a string within another string at a particular position (default is the beginning).
+//"My random string", "JS " -> "JS My random string"
+//"My random string", "JS ", 10 -> "My random JS string"
+
+
+/*
+
+
+function insertString (aString,bString, position) {
+
+    if ( position === undefined || position === null) {
+
+        position=0;
+    }
+
+    result ="";
+
+    for (i=0 ; i < position; i++) {
+
+        result += aString[i];
+
+    }
+
+    result += bString;
+
+    for ( i= position ; i < aString.length ; i++) {
+
+        
+        result += aString[i]
+    }
+
+return result;
+
+}
+
+var final = insertString("abrakadabra","AVADAKEDAVRA", 4);
+
+console.log(final)
+
+*/
+
+
+//26.
+//Join Array Elements into a String
+//Write a program to join all elements of the array into a string, skipping elements that are :
+// undefined, null, NaN, or Infinity.
+//[NaN, 0, 15, false, -22, '', undefined, 47, null]
+
+/*
+
+function joinArrayToString (a) {
+
+
+    result="";
+
+
+    for (i=0; i<a.length; i++){
+
+        if(a[i] !== undefined && a[i] !== null && a[i] === a[i] && a[i] !== Infinity && a[i] !==""){
+
+            result += a[i] + " ";
+ 
+        }
+         
+    }
+ 
+return result ;
+}
+
+
+var final = joinArrayToString (["bla", NaN, "Petar", Infinity,"",undefined, "ha", null,]);
+
+console.log(final);
+
+*/
+
+
+//27.
+
+//
+
+/*
+
+function falsyValues(a) {
+    var result = [];
+
+    for (var i = 0; i < a.length; i++) {
+        if (a[i]) {                                         // if (a[i])  ___ this is most imprtant thing
+            result[result.length] = a[i];                   // with this we are making sure that 
+        };                                                  // only truthy values enter the new array
+                                                            // in this case result         
+    };
+
+    return result;
+};
+
+var falsyValuesResult = falsyValues([1, 'hello', '', 42, false, undefined, null, true, NaN]);
+console.log("Array with no falsy values:", falsyValuesResult);
+
+*/
+
+
+//28.
+//Reverse a Number
+//Write a function that reverses a number. The result must be a number.
+//12345 -> 54321 // Output must be a number
+
+/*
+
+function reverseNumber (a) {
+
+    
+
+    var result="";
+
+    for (i = a.length - 1 ; i > 0 ;i--) {
+
+        result += a[i];
+    }   
+
+    result = +result;
+
+    return result;
+
 
 };
 
-if (a === 1) {
-
-    a+= "st";
-
-} else if ( a === 2) {
-
-    a += "nd";
-
-} else if ( a === 3) {
-
-    a+= "rd";
-} else if ( a > 3){
 
 
-    a+= "th"
-} else {
+var final = reverseNumber("12345");
 
-    mesage = "Your input is zero or invalid";
-  return mesage;
+console.log(final);
+
+console.log(typeof(final));
+
+*/
+
+
+//29.
+//Get the Last Element of an Array
+//Write a function to get the last element of an array. 
+//Passing a parameter n will return the last n elements of the array.
+//[7, 9, 0, -2] -> -2
+//[7, 9, 0, -2], 2 -> [0, -2]
+
+/*
+
+function getLastElement (a, n) {
+
+
+    var reverseA= [];
+
+    for (i = a.length - 1 ; i >= 0 ;i--) {
+
+        reverseA[reverseA.length] += a[i];
+    }   
+
+     var result= [];
+
+    
+
+
+return result;
+
 }
+
+
+var final = getLastElement([1,2,4], 1);
+
+console.log(final);
+
+
+*/
+
+
+
+//30.
+//Create Pre-Filled Array
+//Write a function to create a 
+//specified number of elements with a pre-filled numeric value in the array.
+// 6, 0 -> [0, 0, 0, 0, 0, 0]
+// 2, "none" -> ["none", "none"]
+// 2 -> [null, null]
+
+/*
+
+
+function predefientArray (n,b) {
+
+var a = [];
+
+for( i = 0 ; i < n ; i++){
+
+
+    a[a.length] = b;
+
+}
+
+return a;
+
+};
+
+var final = predefientArray(2,"none");
+
+console.log(final);
+
+*/
+
+
+
+
+//31.
+//Check if a Number is Perfect
+//Write a function that says whether a number is perfect
+//28 -> 28 is a perfect number
+//A perfect number is a positive integer equal to the sum of its proper positive divisors (excluding itself). 
+//For example, 6 and 28 are perfect numbers.
+ 
+
+/*
+
+function perfectNumber(number) {
+
+    if ( number <= 0) {
+
+        console.log ("Number is zero or below, please try again");
+        return;
+    }
+
+   var sum= 0;
+   var check ="is perfect"
+
+    for( i = 1 ; i < number ; i++) {
+        
+        if( number % i === 0 ) {
+
+            sum += i;
+        }
+
+}
+
+    if ( sum === number ) {
+
+        return check;
+   
+    } else {
+
+
+        return check = "is not perfect";
+    }
+
+}
+
+
+
+var final = 6;
+
+console.log(final, perfectNumber(final));
+    
+*/
+
+
+
+
+
+
+//32.
+//Write a function to find a word within a string.
+//'The quick brown fox', 'fox' -> "'fox' was found 1 times"
+//'aa bb cc dd aa', 'aa' -> "'aa' was found 2 times"
+
+/*
+function wordInString (a,b) {
+
+    var check = "";
+
+    for(i = 0 ; i < a.length ; i++ ) {
+
+        if ( a[i] === b[0]){
+
+            for ( j= 0 ; j < b.length; j++) {
+
+                if ( a[i] === b[j] ) {
+
+                    check[check.length] = b[j];
+                }
+
+
+            }
+        }
+        
+
+
+
+    }
+
+
+}
+
+*/
+
+
+//33.
+
+/*
+function hideEmailAddress(email) {
+    let result = '';
+    let atPosition = -1;         // here the most important thing is at position to find the index of "@"
+
+    // Loop through the email to find the position of '@'
+    for (let i = 0; i < email.length; i++) {
+        if (email[i] === '@') {            // this and the line below is how we
+                                             // find the position of @
+             atPosition = i;
+            break;  // Exit the loop once we find the '@'
+        }
+    }
+
+    // Build the first part of the email with the first 3 characters
+    for (let i = 0; i < atPosition; i++) {
+        if (i < 3) {
+            result += email[i];  // Keep the first 3 characters
+        } else {
+            break;  // Stop once we reach the 3rd character
+        }
+    }
+
+    // Add the '...' after the first 3 characters of the username
+    result += '...';
+
+    // Add the domain part to the result
+    for (let i = atPosition; i < email.length; i++) {
+        result += email[i];  // Add the domain part unchanged
+    }
+
+    return result;
+}
+
+// Example usage:
+console.log(hideEmailAddress("myemailaddress@bgit.rs")); 
+
+*/
+
+
+//34.Find the Most Frequent Item
+//Write a program to find the most frequent item in an array.
+//[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
+
+/*
+
+function mostFrequent (a) {
+
+    var maxfreq = 1;
+    var curfreq = 0;
+
+    var freqelement;
+
+    for (i=0 ; i < a.length ; i ++) {
+
+        for ( j = i ; j < a.length ; j++ ) {
+
+            if ( a[i] === a [j]) {
+
+                curfreq ++ ;
+            };
+
+            if ( curfreq > maxfreq ) {
+
+                maxfreq = curfreq
+
+                freqelement = a[i]
+
+            };
+
+        };
+    
+        
+        curfreq = 0;
+
+    };
+
+    return freqelement;
+
+};
+
+var final = mostFrequent (["petar","a","6","petar","a","a","petar"]);
+
+console.log ("Most frequent element is", final);
+
+*/
+
+
+//35. 
+// Check Element in Array
+//Write a program that checks if a given element e is in the array a.
+//Input:  e = 3, a = [5, -4.2, 3, 7]
+//Output: yes
+//Input:  e = 3, a = [5, -4.2, 18, 7]
+//Output: no
+
+/*
+
+function checkElement (a,e) {
+
+    check = "no";
+
+    for ( i = 0 ; i < a.length ; i++) {
+
+        if ( a[i] === e) {
+
+            check = "yes";
+        }
+
+
+    }
+
+    return check;
+}
+
+var final = checkElement(["a","e",1],"b");
+
+console.log(final);
+
+*/
+
+
+//36.
+//Multiply Positive Elements by 2
+//Write a program that multiplies every positive element of a given array by 2.
+//Input array: [-3, 11, 5, 3.4, -8]
+//Output array: [-3, 22, 10, 6.8, -8]
+
+
+/*
+function multiplyPositive (a) {
+
+    for ( i = 0 ; i < a.length ; i ++) {
+
+        if ( a[i] > 0) {
+
+            a[i] *= 2;
+        }
+
+    }
 
 return a;
 }
 
-var final = humanizeNUmber("bla bla");
+var final = multiplyPositive([1, -5 ,-7, 1, 10 ])
 
 console.log(final);
+
+*/
+
+
+//37.
+//Write a program that finds the minimum of a given array and prints out its value and index.
+//Input array: [4, 2, 2, -1, 6]
+//Output: -1, 3
+
+/*
+
+function minimumAndIndex(a){
+
+var min = a[a.length-1];
+
+var position = a.length -1 ;
+
+for (i = a.length -1 ; i >= 0 ; i --){
+
+    if ( a[i] < min) {
+
+        min = a[i];
+
+        position = i;
+    };
+};
+
+var result = [min, position];
+
+return result;
+
+};
+
+var final = minimumAndIndex([ -20,1,-2, -210,-10,-6, -21]);
+
+console.log (final);
+
+*/
+
+
+//38.
