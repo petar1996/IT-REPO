@@ -1402,3 +1402,58 @@ var final = deleteElement([1,2,3,4,5],3);
 console.log(final);
 
 */
+
+
+//44.
+//Insert Element at Specific Position
+//Write a program that inserts a given element e at the given position p in the array a. 
+//If the position is greater than the array length, print an error message.
+//Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
+//Output: [2, -2, 33, 78, 12, 5, 8]
+
+
+/*
+
+function insertElement (a,e,p) {
+
+    var newarray= [];
+
+    var mesage = "Error, position bigger that array length";
+
+    if(p > a.length) {
+
+    return mesage;
+
+    }
+
+
+
+    for (i=0 ; i < p ; i++ ) {
+
+
+        newarray[newarray.length] = a[i]
+    }
+
+    
+
+    newarray[newarray.length] = e;
+
+
+    for (j = p ; j < a.length ; j++ ) {
+
+        newarray[newarray.length] = a[j];
+    }
+
+    return newarray;
+
+
+}
+
+var final = insertElement([1,2,3,4,5,6],3,6);
+
+console.log(final);
+
+*/
+
+
+
