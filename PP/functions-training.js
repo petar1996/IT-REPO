@@ -1456,4 +1456,51 @@ console.log(final);
 */
 
 
+//45.
+//Switch Min and Max
+//Find the min and max element in the following array and switch their places. 
+//Print out the modified array in the console
+//Input:  [ 3, 500, 12, 149, 53, 414, 1, 19 ]
+//Output: [ 3, 1, 12, 149, 53, 414, 500, 19 ]
 
+/*
+
+function switchMinMax (a) {
+
+    min= a[0];
+    max= a[0];
+    
+    
+
+    posmin = 0 ;
+    posmax = 0 ;
+
+
+    for ( i = 0 ; i < a.length ; i ++) {
+
+
+        if (a[i] > max) {
+
+            max = a[i];
+            posmax= i;
+        };
+
+        if ( a [i] < min ) {
+
+            min = a[i];
+            posmin = i;
+            
+        };
+    };
+    
+    a[posmin] = max;
+    a[posmax] = min;
+     
+    return a;
+};
+
+var final = switchMinMax([-10,1,-200,3,400,10]);
+
+console.log(final);
+
+*/
