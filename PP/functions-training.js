@@ -1538,3 +1538,32 @@ var final = transformArray([1,3,4,0,8]);
 console.log(final);
 
 */
+
+
+//47
+//Assign Grades
+//Initialize two arrays. The first one should contain student names, the second one the number of points for each student. 
+//Display students' names with their corresponding grade. Use the following ranges:
+//51-60 -> 6
+//61-70 -> 7
+//71-80 -> 8
+//81-90 -> 9
+//91-100 -> 10
+
+/*
+
+
+function gradeAssign (names,points) { 
+
+
+    for( i = 0; i < points.length ; i ++) {
+
+
+        if(a[i] >= 51 && a[i] <=60) 
+    }
+
+
+
+}
+
+*/
