@@ -1165,7 +1165,7 @@ console.log (final);
 //Input array: [4, 2, 2, -1, 6]
 //Output: 2
 
-
+/*
 
 function secondMinimum (a) {
 
@@ -1216,6 +1216,8 @@ function secondMinimum (a) {
 
 };
 
-var final = secondMinimum([1,2,5,-5,8,-7,6]);
+var final = secondMinimum([1,2,5,-5,8,-7,6,-6]);
 
 console.log(final);
+
+*/
