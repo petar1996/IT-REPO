@@ -1161,3 +1161,61 @@ console.log (final);
 
 
 //38.
+// Write a program that finds the second smallest number and prints out its value.
+//Input array: [4, 2, 2, -1, 6]
+//Output: 2
+
+
+
+function secondMinimum (a) {
+
+    var firstmin = a[0];
+
+    var b = [];
+
+    
+
+    for ( i = 0 ; i < a.length ; i ++) {
+
+        if( a[i] < firstmin) {
+
+           var position = i;
+
+           var firstmin = a[i];
+
+        };
+
+    };
+
+
+    for ( j = 0; j < a.length; j ++) {
+
+        if ( j !== position) {
+
+
+            b[b.length] = a[j];
+
+        };
+    };
+
+    var secondmin = b[0];
+
+    for ( n = 0 ; n < b.length ; n ++) {
+
+        if (b[n] < secondmin ) {
+
+            secondmin = b[n];
+
+
+        };
+
+    };
+
+    return secondmin;
+
+
+};
+
+var final = secondMinimum([1,2,5,-5,8,-7,6]);
+
+console.log(final);
