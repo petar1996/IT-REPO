@@ -1327,3 +1327,78 @@ var final = intertwineArray([1,2,3,4],[5,6,7,8]);
 console.log(final);
 
 */
+
+
+
+//42.
+//Concatenate Two Arrays
+//Write a program that concatenates two arrays.
+//Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
+//Output array: [4, 5, 6, 2, 3, 8, 11, 9]
+
+/*
+
+function concatenateArray (a,b) {
+
+var newArray=[];
+
+
+for (i=0 ; i < a.length ; i++) {
+
+    newArray[newArray.length] = a[i];
+    
+ 
+ }
+
+
+ for (i=0 ; i < b.length ; i++) {
+
+    newArray[newArray.length] = b[i];
+    
+ 
+ }
+
+ return newArray;
+
+};
+
+var final = concatenateArray([1,2,3],[4,5,6,7,10]);
+
+console.log (final);
+
+*/
+
+
+
+//43.
+//Delete an Element from Array
+//Write a program that deletes a given element e from the array a.
+//Input: e = 2, a = [4, 6, 2, 8, 2, 2]
+//Output array: [4, 6, 8]
+
+/*
+
+function deleteElement (a,e) {
+
+b=[];
+
+for (i=0 ; i < a.length ; i ++) {
+
+
+    if( a[i] !== e){
+
+        b[b.length] = a[i];
+
+    }
+}
+
+
+return b;
+
+}
+
+var final = deleteElement([1,2,3,4,5],3);
+
+console.log(final);
+
+*/
