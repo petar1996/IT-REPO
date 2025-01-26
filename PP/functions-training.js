@@ -1297,3 +1297,33 @@ var final = check ([1,2,3,4,2,1]);
 console.log(final) ;
 
 */
+
+
+//41. 
+//Intertwine Two Arrays
+//Write a program that intertwines two arrays. Assume the arrays are of the same length.
+//Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
+//Output array: [4, 3, 5, 8, 6, 11, 2, 9]
+
+
+/*
+function intertwineArray (a,b) {
+
+var newArray=[];
+
+for (i=0 ; i < a.length ; i++) {
+
+   newArray[newArray.length] = a[i];
+   newArray[newArray.length]= b[i] ;
+
+}
+
+return newArray;
+
+}
+
+var final = intertwineArray([1,2,3,4],[5,6,7,8]);
+
+console.log(final);
+
+*/
