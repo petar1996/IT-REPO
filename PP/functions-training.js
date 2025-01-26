@@ -1504,3 +1504,37 @@ var final = switchMinMax([-10,1,-200,3,400,10]);
 console.log(final);
 
 */
+
+
+//46.
+//Transform Array Values
+//Use the following array to make a new one by dividing its values by two and adding 5. 
+//If a given element's value is 0, change it to 20.
+//Input:  [ 3, 500, -10, 149, 53, 414, 1, 19 ]
+//Output: [ 6.5, 255, 20, 79.5, 31.5, 212, 5.5, 14.5 ]
+
+/*
+
+function transformArray (a) {
+
+    for (i= 0 ; i < a.length ; i ++) {
+
+        if( a[i] === 0) {
+
+            a[i] = 20;
+        } else {
+
+            a[i] = (a[i] / 2 ) + 5 ;
+        };
+
+    };
+
+    return a ;
+
+}
+
+var final = transformArray([1,3,4,0,8]);
+
+console.log(final);
+
+*/
