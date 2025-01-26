@@ -1253,3 +1253,47 @@ var final = sumPositive([3,5,-4,-9,7]);
 console.log(final);
 
 */
+
+
+//40.
+//Check if Array is Symmetric
+//Write a program that checks if a given array is symmetric.
+//An array is symmetric if it can be read the same way both from the left and the right.
+//Input array: [2, 4, -2, 7, -2, 4, 2]
+//Output: The array is symmetric.
+//Input array: [3, 4, 12, 8]
+//Output: The array isn’t symmetric.
+
+
+/*
+
+function check (array) {
+
+var mesage = "The array is simetrical";
+
+var reversedArray = [];
+
+for (var i = array.length - 1; i >= 0; i--) {
+  reversedArray[reversedArray.length] = array[i];
+}
+
+for( i = 0 ; i < array.length ; i ++) {
+     
+    if( reversedArray[i] !== array[i]){
+
+        mesage= "The array isn’t symmetric";
+
+    }
+
+}
+
+return mesage;
+
+
+};
+
+var final = check ([1,2,3,4,2,1]);
+
+console.log(final) ;
+
+*/
