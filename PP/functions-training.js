@@ -1058,8 +1058,8 @@ var final = mostFrequent (["petar","a","6","petar","a","a","petar"]);
 
 console.log ("Most frequent element is", final);
 
-*/
 
+*/
 
 //35. 
 // Check Element in Array
@@ -1157,7 +1157,7 @@ var final = minimumAndIndex([ -20,1,-2, -210,-10,-6, -21]);
 
 console.log (final);
 
-*/
 
+*/
 
 //38.
