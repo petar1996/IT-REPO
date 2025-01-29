@@ -1160,4 +1160,415 @@ console.log (final);
 
 */
 
+<<<<<<< HEAD
 //38.
+=======
+
+//38.
+// Write a program that finds the second smallest number and prints out its value.
+//Input array: [4, 2, 2, -1, 6]
+//Output: 2
+
+/*
+
+function secondMinimum (a) {
+
+    var firstmin = a[0];
+
+    var b = [];
+
+    
+
+    for ( i = 0 ; i < a.length ; i ++) {
+
+        if( a[i] < firstmin) {
+
+           var position = i;
+
+           var firstmin = a[i];
+
+        };
+
+    };
+
+
+    for ( j = 0; j < a.length; j ++) {
+
+        if ( j !== position) {
+
+
+            b[b.length] = a[j];
+
+        };
+    };
+
+    var secondmin = b[0];
+
+    for ( n = 0 ; n < b.length ; n ++) {
+
+        if (b[n] < secondmin ) {
+
+            secondmin = b[n];
+
+
+        };
+
+    };
+
+    return secondmin;
+
+
+};
+
+var final = secondMinimum([1,2,5,-5,8,-7,6,-6]);
+
+console.log(final);
+
+*/
+
+
+//39.
+//Write a program that calculates the sum of positive elements in the array.
+//Input array: [3, 11, -5, -3, 2]
+//Output: 16
+
+/*
+
+function sumPositive (a) {
+
+    sum = 0;
+
+
+    for (i = 0 ; i < a.length ; i++) {
+
+        if( a[i] > 0) {
+
+            sum += a[i];
+        }
+
+    }
+
+
+    return sum;
+};
+
+var final = sumPositive([3,5,-4,-9,7]);
+
+console.log(final);
+
+*/
+
+
+//40.
+//Check if Array is Symmetric
+//Write a program that checks if a given array is symmetric.
+//An array is symmetric if it can be read the same way both from the left and the right.
+//Input array: [2, 4, -2, 7, -2, 4, 2]
+//Output: The array is symmetric.
+//Input array: [3, 4, 12, 8]
+//Output: The array isn’t symmetric.
+
+
+/*
+
+function check (array) {
+
+var mesage = "The array is simetrical";
+
+var reversedArray = [];
+
+for (var i = array.length - 1; i >= 0; i--) {
+  reversedArray[reversedArray.length] = array[i];
+}
+
+for( i = 0 ; i < array.length ; i ++) {
+     
+    if( reversedArray[i] !== array[i]){
+
+        mesage= "The array isn’t symmetric";
+
+    }
+
+}
+
+return mesage;
+
+
+};
+
+var final = check ([1,2,3,4,2,1]);
+
+console.log(final) ;
+
+*/
+
+
+//41. 
+//Intertwine Two Arrays
+//Write a program that intertwines two arrays. Assume the arrays are of the same length.
+//Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
+//Output array: [4, 3, 5, 8, 6, 11, 2, 9]
+
+
+/*
+function intertwineArray (a,b) {
+
+var newArray=[];
+
+for (i=0 ; i < a.length ; i++) {
+
+   newArray[newArray.length] = a[i];
+   newArray[newArray.length]= b[i] ;
+
+}
+
+return newArray;
+
+}
+
+var final = intertwineArray([1,2,3,4],[5,6,7,8]);
+
+console.log(final);
+
+*/
+
+
+
+//42.
+//Concatenate Two Arrays
+//Write a program that concatenates two arrays.
+//Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
+//Output array: [4, 5, 6, 2, 3, 8, 11, 9]
+
+/*
+
+function concatenateArray (a,b) {
+
+var newArray=[];
+
+
+for (i=0 ; i < a.length ; i++) {
+
+    newArray[newArray.length] = a[i];
+    
+ 
+ }
+
+
+ for (i=0 ; i < b.length ; i++) {
+
+    newArray[newArray.length] = b[i];
+    
+ 
+ }
+
+ return newArray;
+
+};
+
+var final = concatenateArray([1,2,3],[4,5,6,7,10]);
+
+console.log (final);
+
+*/
+
+
+
+//43.
+//Delete an Element from Array
+//Write a program that deletes a given element e from the array a.
+//Input: e = 2, a = [4, 6, 2, 8, 2, 2]
+//Output array: [4, 6, 8]
+
+/*
+
+function deleteElement (a,e) {
+
+b=[];
+
+for (i=0 ; i < a.length ; i ++) {
+
+
+    if( a[i] !== e){
+
+        b[b.length] = a[i];
+
+    }
+}
+
+
+return b;
+
+}
+
+var final = deleteElement([1,2,3,4,5],3);
+
+console.log(final);
+
+*/
+
+
+//44.
+//Insert Element at Specific Position
+//Write a program that inserts a given element e at the given position p in the array a. 
+//If the position is greater than the array length, print an error message.
+//Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
+//Output: [2, -2, 33, 78, 12, 5, 8]
+
+
+/*
+
+function insertElement (a,e,p) {
+
+    var newarray= [];
+
+    var mesage = "Error, position bigger that array length";
+
+    if(p > a.length) {
+
+    return mesage;
+
+    }
+
+
+
+    for (i=0 ; i < p ; i++ ) {
+
+
+        newarray[newarray.length] = a[i]
+    }
+
+    
+
+    newarray[newarray.length] = e;
+
+
+    for (j = p ; j < a.length ; j++ ) {
+
+        newarray[newarray.length] = a[j];
+    }
+
+    return newarray;
+
+
+}
+
+var final = insertElement([1,2,3,4,5,6],3,6);
+
+console.log(final);
+
+*/
+
+
+//45.
+//Switch Min and Max
+//Find the min and max element in the following array and switch their places. 
+//Print out the modified array in the console
+//Input:  [ 3, 500, 12, 149, 53, 414, 1, 19 ]
+//Output: [ 3, 1, 12, 149, 53, 414, 500, 19 ]
+
+/*
+
+function switchMinMax (a) {
+
+    min= a[0];
+    max= a[0];
+    
+    
+
+    posmin = 0 ;
+    posmax = 0 ;
+
+
+    for ( i = 0 ; i < a.length ; i ++) {
+
+
+        if (a[i] > max) {
+
+            max = a[i];
+            posmax= i;
+        };
+
+        if ( a [i] < min ) {
+
+            min = a[i];
+            posmin = i;
+            
+        };
+    };
+    
+    a[posmin] = max;
+    a[posmax] = min;
+     
+    return a;
+};
+
+var final = switchMinMax([-10,1,-200,3,400,10]);
+
+console.log(final);
+
+*/
+
+
+//46.
+//Transform Array Values
+//Use the following array to make a new one by dividing its values by two and adding 5. 
+//If a given element's value is 0, change it to 20.
+//Input:  [ 3, 500, -10, 149, 53, 414, 1, 19 ]
+//Output: [ 6.5, 255, 20, 79.5, 31.5, 212, 5.5, 14.5 ]
+
+/*
+
+function transformArray (a) {
+
+    for (i= 0 ; i < a.length ; i ++) {
+
+        if( a[i] === 0) {
+
+            a[i] = 20;
+        } else {
+
+            a[i] = (a[i] / 2 ) + 5 ;
+        };
+
+    };
+
+    return a ;
+
+}
+
+var final = transformArray([1,3,4,0,8]);
+
+console.log(final);
+
+*/
+
+
+//47
+//Assign Grades
+//Initialize two arrays. The first one should contain student names, the second one the number of points for each student. 
+//Display students' names with their corresponding grade. Use the following ranges:
+//51-60 -> 6
+//61-70 -> 7
+//71-80 -> 8
+//81-90 -> 9
+//91-100 -> 10
+
+/*
+
+
+function gradeAssign (names,points) { 
+
+
+    for( i = 0; i < points.length ; i ++) {
+
+
+        if(a[i] >= 51 && a[i] <=60) 
+    }
+
+
+
+}
+
+*/
+
