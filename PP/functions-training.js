@@ -1693,3 +1693,32 @@ console.log(final);
 // Consulted Chat GPT for the result !!
 
 */
+
+
+//50.
+//Reverse a String
+//Write a program that takes a string and prints its characters out in reversed order in the console.
+//Input:  Belgrade Institute of Technology
+//Output: ygolonhceT fo etutitsnI edargleB
+
+/*
+
+function reverseAString (a) {
+
+   var reverse ="" ;
+
+    for(i = a.length-1; i >= 0; i--) {
+
+         reverse += a[i];
+    }
+
+
+    return reverse + ""
+
+}
+
+var final = reverseAString("Belgrade Institute of Technology");
+
+console.log(final);
+
+*/
