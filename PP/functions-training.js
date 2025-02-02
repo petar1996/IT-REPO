@@ -1722,3 +1722,34 @@ var final = reverseAString("Belgrade Institute of Technology");
 console.log(final);
 
 */
+
+
+
+//51.
+//Generate Number Combinations
+//Write a program that displays all the combinations of two numbers between 1 and 7.
+//Don't display two of the same numbers at the same time. Display the number of possible combinations, as well.
+
+/*
+
+
+function generateNumberComb (number) {
+
+    var firsthalf=[];
+
+    for (i = 0 ; i < number.length ; i ++) {
+
+        for (j = 0 ; j < number.length ; j++) {
+
+
+
+
+
+        }
+    }
+
+
+
+}
+
+*/
