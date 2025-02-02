@@ -1552,6 +1552,7 @@ console.log(final);
 //81-90 -> 9
 //91-100 -> 10
 
+/*
 
 function gradeAssign (students, points) {
 
@@ -1615,6 +1616,50 @@ var finalres = gradeAssign(["Petar","Nikola","Marko","Mladen"],[6,53,78,90]);
 
 console.log(finalres);
 
+*/
+
+
+//48.
+//Add and Subtract Numbers
+//Write a program that uses a loop to add all the even numbers from 1 to 1000
+//and subtracts all the odd numbers 1 to 500 from the calculated sum.
+//The result should then be multiplied by 12.5 and displayed in the console.
+//Output: 2350000
+
+
+
+
+function addAndSubtract (a) {
+
+    var sumeven = 0;
+    var sumodd = 0
+
+    for (i = 0 ; i <= a ; i ++ ) {
+
+        if ( i % 2 == 0) {
+
+            sumeven += i;
+
+        } else if ( i <= 500) {
+
+            sumodd += i;
+
+        }
+
+       var sumfinal = (sumeven - sumodd) * 12.5;
+
+       
+
+
+    }
+
+return sumfinal;
+
+}
+
+
+
+console.log(addAndSubtract(1000));
 
 
 
