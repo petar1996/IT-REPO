@@ -1626,7 +1626,7 @@ console.log(finalres);
 //The result should then be multiplied by 12.5 and displayed in the console.
 //Output: 2350000
 
-
+/*
 
 
 function addAndSubtract (a) {
@@ -1661,5 +1661,35 @@ return sumfinal;
 
 console.log(addAndSubtract(1000));
 
+*/
 
 
+
+//49.
+//Define a 10-element array. Take the first two letters from every string 
+//(that has at least 2 letters) in the array and create a new string from them. Print it out in the console.
+//Input: [ "M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A" ]
+//Output: AnStJoJoDaMa
+
+
+/*
+
+function addTwoFromString(arr) {
+    var newStr = "";
+
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] === "string" && arr[i].length >= 2) {
+            newStr += arr[i][0] + arr[i][1]; // Add the first two characters
+        }
+    }
+
+    return newStr;
+}
+
+var final = addTwoFromString(["M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A"]);
+
+console.log(final);
+
+// Consulted Chat GPT for the result !!
+
+*/
