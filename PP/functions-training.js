@@ -1160,9 +1160,7 @@ console.log (final);
 
 */
 
-<<<<<<< HEAD
 //38.
-=======
 
 //38.
 // Write a program that finds the second smallest number and prints out its value.
@@ -1554,21 +1552,69 @@ console.log(final);
 //81-90 -> 9
 //91-100 -> 10
 
-/*
+
+function gradeAssign (students, points) {
+
+    grades = [];
+
+    for(i = 0 ; i < points.length ; i++) {
+
+        if (points[i] >= 51 && points[i] <= 60) {
+
+            grades[grades.length] = 6;
+
+        } else if (points[i] >=61 && points[i] <= 70) {
+
+            grades[grades.length] = 7;
+
+        } else if (points[i] >= 71 && points[i] <= 80) {
+
+            grades[grades.length] = 8;
+
+        } else if (points[i] >= 81 && points[i] <= 90) {
+
+            grades[grades.length] = 9; 
+
+        } else if (points[i] >= 91 && points[i] <= 100) {
 
 
-function gradeAssign (names,points) { 
+            grades[grades.length] = 9;
 
 
-    for( i = 0; i < points.length ; i ++) {
+        } else if (points[i] < 51) {
+
+            grades[grades.length] = "and failed to complete the exam";
+        
+        };
+
+    };
 
 
-        if(a[i] >= 51 && a[i] <=60) 
-    }
+    intertwine = [];
+    for (j=0 ; j < students.length ; j++) {
+
+        if (points[j] >= 51) {
+
+            intertwine[intertwine.length] = students[j] + " acquired " + points[j] + " points" + " and earned " + grades[j];
+
+        } else {
+
+            intertwine[intertwine.length] = students[j] +  " acquired " + points[j] + " points " + grades[j];
+            
+        }
+     
+     };
+
+return intertwine;
+
+
+};
+
+
+var finalres = gradeAssign(["Petar","Nikola","Marko","Mladen"],[6,53,78,90]);
+
+console.log(finalres);
 
 
 
-}
-
-*/
 
