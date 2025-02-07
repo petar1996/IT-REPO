@@ -1810,3 +1810,53 @@ var final = checkPrime(15) ;
 console.log(final);
 
 */
+
+
+
+//53.
+//Check Palindrome
+//Check if a given string is a palindrome (spaces are ignored).
+
+//Input:  eye  | Geek  | a nut for a jar of tuna
+//Output: true | false | true
+
+/*
+function checkPalindrone (string) {
+
+    var checker = true;
+    var newstring ="";
+    var backwardarray ="";
+
+    for ( i = 0 ; i < string.length ; i++) {
+
+        if(string[i] !== " ") {
+
+        newstring += string[i];
+
+        };
+
+    };
+
+    for (i = newstring.length -1 ; i >= 0 ; i--) {
+
+        backwardarray += newstring[i];
+    };
+
+    for ( i = 0 ; i < newstring.length ; i++) {
+
+        if( newstring[i] !== backwardarray[i]) {
+
+            checker = false;
+        };
+
+    };
+
+return checker;
+
+};
+
+var final = checkPalindrone ("a nut for a jar of tuna");
+
+console.log(final);
+
+*/
