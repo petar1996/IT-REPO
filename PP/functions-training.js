@@ -1730,26 +1730,39 @@ console.log(final);
 //Write a program that displays all the combinations of two numbers between 1 and 7.
 //Don't display two of the same numbers at the same time. Display the number of possible combinations, as well.
 
-/*
 
+/*
 
 function generateNumberComb (number) {
 
-    var firsthalf=[];
 
-    for (i = 0 ; i < number.length ; i ++) {
+    var finalarr= [];
 
-        for (j = 0 ; j < number.length ; j++) {
+    for (i = 1; i <=number ; i ++) {
+
+        for (j = 1; j <=number; j++) {
+
+            if( i !== j) {
+
+                finalarr[finalarr.length] = i*10 + j;
+            
 
 
-
-
+            }
 
         }
     }
 
+return [finalarr, finalarr.length];
+
 
 
 }
+
+var final = generateNumberComb (7) ;
+
+console.log (final);
+
+
 
 */
