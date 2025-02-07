@@ -1765,4 +1765,48 @@ console.log (final);
 
 
 
+*/ 
+
+
+
+//52.
+//Write a program that checks if the entered number is a prime number (i.e., divisible only by 1 and by itself).
+//Input:  17    | 15
+//Output: true  | false
+
+/*
+
+
+function checkPrime (a) {
+
+var checker = true;
+
+
+  if( a <= 1) {
+
+    checker = false;
+  }
+
+
+    for( i=2 ; i < a ; i++) {
+
+        if( a % i === 0) {
+
+
+          checker = false;
+
+        }
+
+
+    }
+
+   
+return checker;
+}
+
+
+var final = checkPrime(15) ;
+
+console.log(final);
+
 */
