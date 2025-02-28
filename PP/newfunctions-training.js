@@ -147,6 +147,25 @@ console.log(final);
 */
 
 
+//Task 6: Convert Temperature from Celsius to Fahrenheit
+//Write a function to input temperature in Celsius and convert it to Fahrenheit.
+//Input: 0°C
+//Output: 32°F
+
+/*
+
+function celsiusToFahrenheit(a) {
+    var fahrenheit = (a * 9/5) + 32;
+    return fahrenheit;
+  };
+  
+  var final = celsiusToFahrenheit(0);
+  console.log( final +"°F");
+
+ 
+*/
+
+
 
 
 
