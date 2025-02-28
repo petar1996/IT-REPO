@@ -86,3 +86,39 @@ function rotateA (a, b) {
   console.log("Rotated array:", rotateArrResult);
 
 */
+
+//Task 4: Convert a Number to an Array of Digits
+//Write a function that takes a number and returns an array of its digits.
+//Input: 12345
+//Output: [1, 2, 3, 4, 5]
+
+/*
+
+
+function convertNumToA (a) {
+
+    let stringofa = a + "";
+
+    resultarray = [];
+
+    for( let i=0 ; i < stringofa.length ; i++ ) {
+
+
+        resultarray[resultarray.length] = parseInt(stringofa[i]);
+
+    };
+
+    return resultarray;
+}
+
+let final = convertNumToA(12345);
+
+console.log(final);
+
+*/
+
+
+
+
+
+
