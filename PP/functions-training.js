@@ -1730,8 +1730,8 @@ console.log(final);
 //Write a program that displays all the combinations of two numbers between 1 and 7.
 //Don't display two of the same numbers at the same time. Display the number of possible combinations, as well.
 
-
 /*
+
 
 function generateNumberComb (number) {
 
@@ -1765,7 +1765,7 @@ console.log (final);
 
 
 
-*/ 
+*/
 
 
 
@@ -1868,3 +1868,55 @@ console.log(final);
 // Find Greatest Common Divisor
 //Write a program that calculates the greatest common divisor of two integers. Note: The greatest common 
 //divisor of two non-zero integers is the greatest positive number that divides both numbers with no remainder.
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+//Predefined Functions
+
+
+// 1. 
+//Convert Array of Strings to Numbers
+//Write a function that converts an array of strings into an array of numbers.
+//Filter out all non-numeric values.
+//Input: ["1", "21", undefined, "42", "1e+3", Infinity]
+//Output: [1, 21, 42, 1000]
+
+
+function stringToNumber(a) {
+
+
+    var newarray = [];
+
+    for( i=0 ; i< a.length ; i++ ) {
+
+
+        if (typeof a[i] === "string" || typeof a[i] === "number" || isFinite (a[i]) !== "true" ) {
+
+
+            newarray[newarray.length] = parseFloat(a[i]);
+
+        };
+
+    };
+
+    return newarray;
+
+};
+
+var final = stringToNumber(["1", "21", undefined, "42", "1e+3", Infinity]) ;
+
+console.log (final);
