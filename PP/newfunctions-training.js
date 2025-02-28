@@ -155,18 +155,52 @@ console.log(final);
 /*
 
 function celsiusToFahrenheit(a) {
-    var fahrenheit = (a * 9/5) + 32;
+    let fahrenheit = (a * 9/5) + 32;
     return fahrenheit;
   };
   
-  var final = celsiusToFahrenheit(0);
+  let final = celsiusToFahrenheit(0);
   console.log( final +"°F");
 
  
 */
 
+//Task 7: Find the Maximum Element in an Array
+//Write a function to find the maximum element in an array of numbers. Filter out all non-number elements.
+//Input: [4, 8, "hello", 15, undefined, 23, null, 42]
+//Output: 42
+
+/*
+
+function findMax (a) { 
+
+    let max = a[0];
+
+    for( let i = 0 ; i < a.length ; i ++) {
+
+        if ( typeof a[i] !== 'number') {
+
+            continue;
+        };
+
+            
+        if ( a[i] > max) {
+
+            max = a[i];
+        };
+
+    }
+
+    return max ;
+
+}
 
 
+let final = findMax([4, 8, "hello", 15, undefined, 23, null, 42]);
+
+console.log(final);
+
+*/
 
 
 
