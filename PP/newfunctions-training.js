@@ -60,3 +60,29 @@ var combine = function combineTwoA (a,b) {
 console.log (combine( ['a','b','c'], [1,2,3] ));
 
 */
+
+
+//Task 3: Rotate an Array by k Elements
+//Write a function that rotates a list by k elements.
+//Input: [1,2,3,4,5,6], k = 2
+//Output: [3,4,5,6,1,2]
+
+/*
+function rotateA (a, b) {
+    var newarray = [];
+  
+    for (let i = b; i < a.length; i++) {
+        newarray [newarray.length] = a[i];
+    };
+  
+    for (let i = 0; i < b; i++) {
+        newarray [newarray.length] = a[i];;
+    };
+  
+    return newarray;
+  };
+  
+  var rotateArrResult = rotateA ([1, 2, 3, 4, 5, 6], 4);
+  console.log("Rotated array:", rotateArrResult);
+
+*/
