@@ -119,6 +119,42 @@ console.log(final);
 
 
 
+//Task 5: Multiplication Table Up to 12
+//Write a program that prints a multiplication table for numbers up to 12.
+//Example Output:
+//1  2  3  4  5  6  7  8  9 10 11 12
+//2  4  6  8 10 12 14 16 18 20 22 24
+//...
+
+/*
+
+function multipli(a) {
+    let result = "";
+
+    for (let i = 1; i <= a; i++) { 
+        for (let j = 1; j <= a; j++) { 
+            result += (i * j) + "\t"; 
+        }
+        result += "\n"; 
+    }
+
+    return result;
+}
+
+let final = multipli(12);
+console.log(final);
+
+*/
+
+
+
+
+
+
+
+
+
+
 
 
 
