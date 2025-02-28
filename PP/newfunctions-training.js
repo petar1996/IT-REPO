@@ -203,6 +203,45 @@ console.log(final);
 */
 
 
+//Task 8: Find Both Maximum and Minimum Elements
+//Write a function to find the maximum and minimum elements. The function returns an array.
+//Input: [10, 20, 5, 3, 8, 100]
+//Output: [3, 100]
+
+
+
+function findMax (a) { 
+
+    let max = a[0];
+    let min = a[0]
+
+    for( let i = 0 ; i < a.length ; i ++) {      
+
+            
+        if ( a[i] > max) {
+
+            max = a[i];
+        };
+
+        if ( a[i] < min) {
+
+            min = a[i]
+        }
+
+
+    return max ;
+
+}
+
+
+let final = findMax([4, 8, "hello", 15, undefined, 23, null, 42]);
+
+console.log(final);
+
+
+
+
+
 
 
 
