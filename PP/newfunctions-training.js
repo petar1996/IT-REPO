@@ -210,31 +210,39 @@ console.log(final);
 
 
 
-function findMax (a) { 
+function findMaxMin (a) {
 
     let max = a[0];
     let min = a[0]
 
     for( let i = 0 ; i < a.length ; i ++) {      
 
+        if( typeof a[i] !== 'number') {
+
+            continue;
+        }
             
         if ( a[i] > max) {
 
             max = a[i];
         };
-
         if ( a[i] < min) {
 
-            min = a[i]
-        }
+            min = a[i];
+        };
+
+   
+
+    };
+
+let result = [max, min];
+
+return result;
+};
 
 
-    return max ;
 
-}
-
-
-let final = findMax([4, 8, "hello", 15, undefined, 23, null, 42]);
+let final = findMaxMin([10, 20, 5, 3, 8, 100]);
 
 console.log(final);
 
