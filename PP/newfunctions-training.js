@@ -484,3 +484,94 @@ const celsiusToFahrenheitNew = function (a) {
   console.log(final);
   
   */
+
+
+
+
+//Task 16: Fortune Teller
+//Write a function named tellFortune that:
+
+//Takes 4 arguments: number of children, partner's name, geographic location, and job title.
+//Outputs your fortune in the format:
+//"You will be a X in Y, and married to Z with N kids."
+//Call the function three times with different arguments.
+//tellFortune(2, "Alice", "New York", "Software Engineer");
+//tellFortune(3, "Bob", "London", "Doctor");
+//tellFortune(1, "Emma", "Paris", "Artist");
+  
+
+/*
+
+  const fortuneTeller = function (amount, name, location, job) {
+  return "You will be a " + job + " in " + location + ", and married to " + name + " with " + amount + " kids.";
+};
+
+console.log(fortuneTeller(2, "Alice", "New York", "Software Engineer"));
+
+*/
+
+
+
+//Task 17: Convert Dog Years
+//Write a function named calculateDogAge that:
+//Takes 1 argument: the dog's age in human years.
+//Calculates the dog's age based on the conversion rate of 1 human year = 7 dog years.
+//Outputs the result in the format:
+//"Your doggie is NN years old in dog years!"
+//Call the function three times with different values.
+//calculateDogAge(2);
+//calculateDogAge(5);
+//calculateDogAge(10);
+
+/*
+
+let dogYears = function (a, b) {
+    return "Your doggie is " + (a * b) + " years old in dog years!";
+  };
+  
+  console.log(dogYears(2, 7));
+
+
+*/
+
+
+//Task 14: Compute Body Mass Index (BMI)
+//The Body Mass Index (BMI) is calculated as the weight of a person (in kg) divided by the square of their height (in meters).
+// Write a function that takes two parameters, weight and height, computes the BMI, and returns the corresponding category:
+
+//Starvation: BMI < 15
+//Anorexic: BMI < 17.5//Underweight: BMI < 18.5
+//Ideal: 18.5 ≤ BMI < 25
+//Overweight: 25 ≤ BMI < 30
+//Obese: 30 ≤ BMI < 40
+//Morbidly Obese: BMI ≥ 40
+//Input: (weight = 70, height = 1.75)
+//Output: "Ideal"
+
+/*
+
+let bodyMassIndex = function (weight, height) {
+    let result = weight / (height * height);
+  
+    if (result < 15) {
+      return "Starvation";
+    } else if (result < 17.5) {
+      return "Anorexic";
+    } else if (result < 18.5) {
+      return "Underweight";
+    } else if (result >= 18.5 && result < 25) {
+      return "Ideal";
+    } else if (result >= 25 && result < 30) {
+      return "Overweight";
+    } else if (result >= 30 && result < 40) {
+      return "Obese";
+    } else if (result >= 40) {
+      return "Morbidly Obese";
+    } else {
+      return "Wrong inputs";
+    };
+  };
+  
+  console.log(bodyMassIndex(70, 1.75));
+
+  */
