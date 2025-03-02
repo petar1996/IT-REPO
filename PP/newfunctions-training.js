@@ -208,6 +208,7 @@ console.log(final);
 //Input: [10, 20, 5, 3, 8, 100]
 //Output: [3, 100]
 
+/*
 
 
 function findMaxMin (a) {
@@ -246,15 +247,240 @@ let final = findMaxMin([10, 20, 5, 3, 8, 100]);
 
 console.log(final);
 
+*/
+
+
+
+//Task 9: Find the Median Element in an Array
+//Write a function to find the median element of an array.
+//Input: [1, 3, 5, 7, 9]
+//Output: 5
+
+/*
+
+function findMedian(a) {
+
+    let middle = 0;
+
+    
+    for (let i = 0; i < a.length; i++) {
+        if (i * 2 + 1 === a.length) {
+
+            middle= i;
+        }
+    }
+
+    return a[middle];
+};
+
+
+let final = findMedian([1, 3, 5, 7, 9]);
+
+
+console.log (final);
+
+*/
+
+
+//Task 10: Find the Most Frequently Occurring Element
+//Write a function to find the element that occurs most frequently. / vratiti se na resenje zadatka 
+//Input: [1, 2, 3, 2, 2, 4, 1, 1, 1]
+//Output: 1
+
+/*
+
+const mostFreq = function (a) {
+    let mostFrequent = a[0];
+    let maxCount = 0;
+  
+    for (let i = 0; i < a.length; i++) {
+      let count = 0;
+  
+      for (let j = 0; j < a.length; j++) {
+        if (a[i] === a[j]) {
+          count++;
+        };
+      };
+  
+      if (count > maxCount) {
+        maxCount = count;
+        mostFrequent = a[i];
+      };
+    };
+  
+    return mostFrequent;
+  };
+  
+  console.log(mostFreq([1, 2, 3, 2, 2, 4, 1, 1, 1]));
+  
+  */
+
+
+
+ // Task 11: Retrieve First, Middle, and Last Elements
+//Write a function to return the first, middle, and last element of an array if it has an odd number of elements. 
+//If it has an even number, return only the first and last. If the array is empty, return it as-is.
+//Input: [10, 20, 30, 40, 50]
+//Output: [10, 30, 50]
+
+/*
+
+ function retrive(a) {
+
+    
+    let middle = 0;
+
+
+    if (a.length === 0) {
+      return a;
+    };
+
+ for ( let i = 0 ;  i < a.length ; i ++) {
+
+    if (i * 2 + 1 === a.length){
+
+        middle = i;
+    };
+
+    if( a.length % 2 !== 0) {
+
+
+        return "First" + a[0] + ", middle "+ a[middle] + ", last" + a[a.length-1];
+
+
+    } else {
+
+        return "First and last element: " + a[0] + ", " + a[a.length - 1];
+    };
+
+};
+  
+ };
+  
+
+
+  console.log(retrive([10, 20, 30, 40, 50]));
+
+*/        //vratiti se na ovaj zadatak zavrsiti !
 
 
 
 
 
+//Task 12: Compute the Average of N Elements
+//Write a function to find the average of N elements. The function should be flexible to receive a dynamic number of parameters.
+//Input: (10, 20, 30, 40, 50)
+//Output: 30
+
+
+/*
+function findAverage (a) {
+    let result = 0;
+  
+    for (let i = 0; i < a.length; i++) {
+      result += a[i];
+    };
+  
+    let finalResult = result / a.length;
+    return "The average of A elements: " + finalResult;
+  };
+
+  let final = findAverage( [10, 20, 30, 40, 50, 70])
+  
+  console.log(final);
+
+  */
+
+
+  
+// Task 20: Convert Fahrenheit to Celsius
+//Create a function called fahrenheitToCelsius that:
+
+//Stores a Fahrenheit temperature in a variable.
+//Converts it to Celsius using the formula: C = (F - 32) × 5/9.
+//Outputs the result in the format:
+//"NN°F is NN°C."
+//fahrenheitToCelsius(32); // "32°F is 0°C"
+//fahrenheitToCelsius(212); // "212°F is 100°C"
+//fahrenheitToCelsius(50); // "50°F is 10°C"
+
+
+/*
+const fahrenheitToCelsius = function (a) {
+  let fahrenheit = a;
+  let celsius = (fahrenheit - 32) * 5/9;
+
+  return fahrenheit + "°F is " + celsius + "°C";
+};
+
+console.log(fahrenheitToCelsius(50));
+
+*/
+
+
+
+//Task 19: Convert Celsius to Fahrenheit
+//Create a function called celsiusToFahrenheit that:
+
+//Stores a Celsius temperature in a variable.
+//Converts it to Fahrenheit using the formula: F = C × 9/5 + 32.
+//Outputs the result in the format:
+//"NN°C is NN°F."
+//celsiusToFahrenheit(0); // "0°C is 32°F"
+//celsiusToFahrenheit(100); // "100°C is 212°F"
+//celsiusToFahrenheit(-10); // "-10°C is 14°F"
+
+/*
+const celsiusToFahrenheitNew = function (a) {
+    let celsius = a;
+    let fahrenheit = celsius * 9/5 + 32;
+  
+    return celsius + "°C is " + fahrenheit + "°F";
+  };
+  
+  console.log(celsiusToFahrenheitNew(100));
+
+  */
 
 
 
 
 
+  //Task 13: Find Numbers Greater Than the Average
+  //Write a function to find all the numbers greater than the average.
+
+  //Input: [10, 20, 30, 40, 50]
+  //Output: [40, 50]
+
+  /*
+
+  function findGreaterAverage (a) {
+    let result = 0;
+    let newarray= [];
+  
+    for (let i = 0; i < a.length; i++) {
+      result += a[i];
+    };
+  
+    let average = result / a.length;
+
+    for (let i = 0; i < a.length; i++) {
 
 
+        if ( a[i] > average) {
+
+
+            newarray[newarray.length] = a[i];
+        }
+
+    };
+
+    return newarray;
+
+  };
+
+  let final = findGreaterAverage( [10, 20, 30, 40, 50])
+  
+  console.log(final);
+  
+  */
