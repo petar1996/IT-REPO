@@ -322,11 +322,11 @@ const mostFreq = function (a) {
 //Input: [10, 20, 30, 40, 50]
 //Output: [10, 30, 50]
 
-
+/*
 
 function retriveFML(a) {
     if (a.length === 0) {
-        return arr; 
+        return a; 
     }
 
     let first = a[0];
@@ -351,7 +351,7 @@ let final = retriveFML([10, 20, 30, 40, 50])
 console.log(final);
 
 
-
+*/
      
 
 
