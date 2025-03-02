@@ -283,8 +283,7 @@ console.log (final);
 
 
 //Task 10: Find the Most Frequently Occurring Element
-//Write a function to find the element that occurs most frequently. / vratiti se na resenje zadatka 
-//Input: [1, 2, 3, 2, 2, 4, 1, 1, 1]
+//Write a function to find the element that occurs most frequently. 
 //Output: 1
 
 /*
@@ -323,45 +322,37 @@ const mostFreq = function (a) {
 //Input: [10, 20, 30, 40, 50]
 //Output: [10, 30, 50]
 
-/*
 
- function retrive(a) {
 
-    
+function retriveFML(a) {
+    if (a.length === 0) {
+        return arr; 
+    }
+
+    let first = a[0];
+    let last = a[a.length - 1];
     let middle = 0;
 
-
-    if (a.length === 0) {
-      return a;
+    for (let i = 0; i < a.length; i++) {
+        if (i * 2 + 1 === a.length) {
+            middle = i; 
+        };
     };
 
- for ( let i = 0 ;  i < a.length ; i ++) {
-
-    if (i * 2 + 1 === a.length){
-
-        middle = i;
-    };
-
-    if( a.length % 2 !== 0) {
-
-
-        return "First" + a[0] + ", middle "+ a[middle] + ", last" + a[a.length-1];
-
-
+    if (a.length % 2 === 1) {
+        return [first, a[middle], last]; 
     } else {
-
-        return "First and last element: " + a[0] + ", " + a[a.length - 1];
+        return [first, last]; 
     };
-
 };
-  
- };
-  
+ 
+let final = retriveFML([10, 20, 30, 40, 50])
+
+console.log(final);
 
 
-  console.log(retrive([10, 20, 30, 40, 50]));
 
-*/        //vratiti se na ovaj zadatak zavrsiti !
+     
 
 
 
@@ -502,7 +493,7 @@ const celsiusToFahrenheitNew = function (a) {
 
 /*
 
-  const fortuneTeller = function (amount, name, location, job) {
+  let fortuneTeller = function (amount, name, location, job) {
   return "You will be a " + job + " in " + location + ", and married to " + name + " with " + amount + " kids.";
 };
 
