@@ -67,3 +67,23 @@
 })("Malamut");
 
 */
+
+//Task 4: Generate an Email Suggestion
+//Write a function with parameters name and surname that returns a function suggesting an email in the form name.surname@gmail.com.
+// input: "Pera", "Peric"
+// Output: pera.peric@gmail.com
+
+/*
+
+function emailSugestion(name,surname,callback) {
+    console.log("Here is a suggestion for your mail");
+    callback(name,surname);
+};
+
+function emailCreator (a, b) {
+    console.log(a.toLowerCase() + "." + b.toLowerCase() + "@gmail.com");
+};
+
+emailSugestion('Alice', "Allarick",emailCreator);
+
+*/
