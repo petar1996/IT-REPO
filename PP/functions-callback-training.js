@@ -35,3 +35,35 @@
 })(3,4);
 
 */
+
+
+
+//Task 3: Replace Letters 'm' or 'M' and Count Replacements
+//Write an IIFE that replaces all appearances of the letters m or M with * and returns the number of replacements.
+
+
+/*
+(function(string) { 
+
+    let newstring ='';
+
+    for( let i = 0 ; i < string.length ; i ++) {
+
+        if (string[i] ==="M" || string[i] ==="m") {
+
+
+            newstring += '*';
+
+        } else {
+
+            newstring += string[i];
+
+        };
+
+    }; 
+
+    console.log(newstring);
+  
+})("Malamut");
+
+*/
