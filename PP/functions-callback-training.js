@@ -152,3 +152,45 @@ function validatePassword(password, successCallback, errorCallback) {
   validatePassword("JSGuru9", successCallback, errorCallback);
   
   */
+
+
+// Task 7: Filter Elements Based on a Condition (Callback)
+//Write a function that filters elements of the given array so that they satisfy a condition given by the callback function.
+//console.log(filterArray([2, 8, 11, 4, 9, 3], isOdd));
+// Output: [11, 9, 3]
+
+// 1. jedan od nacina al nije tacan jer glavna funckija ima samo console log.
+
+/*
+
+    function filterArray(array, callback) {
+
+        console.log(callback(array))
+       
+};
+
+
+
+    function isOdd (n) {
+
+       let newArray = [];
+
+        for ( let i = 0 ; i <  n.length ; i++){
+
+            if (n[i] % 2 !==0) {
+
+                newArray.push(n[i]);
+            };
+
+        };
+
+    return newArray;
+    };
+
+
+    filterArray([1,2,3,4,5,6], isOdd)
+
+    */
+
+
+    
