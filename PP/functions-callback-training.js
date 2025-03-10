@@ -87,3 +87,25 @@ function emailCreator (a, b) {
 emailSugestion('Alice', "Allarick",emailCreator);
 
 */
+
+
+
+//Task 5: Convert an Octal Number to Decimal
+//Write a function that returns another function that calculates the decimal value of a given octal number.
+// input: "034"
+// Output: 28
+
+/*
+
+function decValue (a) {
+    return function () {
+        let decimal = parseInt(a, 8);
+        console.log(decimal);
+    };
+};
+
+const decValueResult = decValue(34);
+decValueResult();
+console.log("Presek");
+
+*/
