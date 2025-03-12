@@ -278,3 +278,50 @@ function replaceStr (string) {
 changeStr("JS menjaj JS menjaj JS", replaceStr);
 
 */
+
+
+
+//Task 10: Insert a Character at a Given Position
+//Write a function that inserts a given character at a given position in a string.
+//console.log(insertCharacter("Goo morning", 4, 'd')); 
+// Output: "Good morning"
+
+/*
+
+function insertChar (string,position,character) {
+
+    let newStr = "";
+
+    for (let i = 0 ; i < position-1 ; i++) {
+
+
+        newStr += string[i];
+
+
+    };
+
+    newStr += character;
+
+
+    for (let i = position - 1; i < string.length ; i++) {
+
+
+
+        newStr += string[i];
+    };
+
+    return newStr;
+
+} ;
+
+
+let  final = insertChar ("Goo morning",4,'d');
+
+(function printResult (result) {
+
+
+    console.log(result);
+
+})(final);
+
+*/
