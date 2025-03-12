@@ -399,3 +399,46 @@ function deleteSecondEl(arr) {
 let final = deleteSecondEl([3, 5, 1, 8, 90, -4, 23, 1, 67]);
 
 console.log(final);
+
+*/
+
+
+
+
+//Task 13: Double Values Between Two Positions
+//Write a function that doubles the elements between two given positions in an array.
+//console.log(doubleBetween([3, 5, 1, 8, 90, -4, 23, 1, 67], 2, 6));
+// Output: [3, 5, 2, 16, 180, -8, 46, 1, 67]
+
+
+/*
+
+function doubleValueInRange(arr , p1, p2) {
+
+    let newArr = [];
+
+    for (let i = 0 ; i < arr.length ; i++) {
+
+        if( i >= p1  && i <= p2) {
+
+
+            newArr[newArr.length] = arr[i] * 2;
+
+        } else {
+
+
+            newArr[newArr.length] = arr[i];
+
+        };
+
+    };
+
+    return newArr;
+
+};
+
+let final = doubleValueInRange([3, 5, 1, 8, 90, -4, 23, 1, 67],2,6);
+
+console.log(final);
+
+*/
