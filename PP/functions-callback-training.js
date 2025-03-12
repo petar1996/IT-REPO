@@ -325,3 +325,43 @@ let  final = insertChar ("Goo morning",4,'d');
 })(final);
 
 */
+
+
+
+
+//Task 11: Delete a Character from a Given Position
+//Write a function that deletes a character from the given position in the string.
+//console.log(deleteCharacter("Goodd morning!", 3)); 
+// Output: "Good morning!"
+
+
+/*
+
+function deleteChar (string, position){
+
+
+    let newStr ="";
+
+    for (let i=0 ; i < string.length ; i ++) {
+
+        if(i === position) {
+
+            continue;
+        } else {
+
+
+            newStr += string[i];
+        };
+
+
+    };
+    
+    return newStr;
+
+};
+
+let final = deleteChar("Goodd morning!", 3);
+
+console.log(final);
+
+*/
