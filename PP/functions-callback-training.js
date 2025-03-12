@@ -365,3 +365,37 @@ let final = deleteChar("Goodd morning!", 3);
 console.log(final);
 
 */
+
+
+
+//Task 12: Delete Every Second Element from an Array
+//Write a function that removes every second element from a given array.
+//console.log(removeEverySecond([3, 5, 1, 8, 90, -4, 23, 1, 67]));
+// Output: [3, 1, 90, 23, 67]
+
+/*
+
+function deleteSecondEl(arr) {
+
+        let newArr = [];
+
+        for(i=0 ; i < arr.length ; i++){
+
+            if(i % 2 !==0) {
+
+                continue;
+
+            } else{
+
+                newArr[newArr.length] = arr[i];
+
+            };
+       };
+
+       return newArr;
+
+};
+
+let final = deleteSecondEl([3, 5, 1, 8, 90, -4, 23, 1, 67]);
+
+console.log(final);
