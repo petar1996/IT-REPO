@@ -442,3 +442,31 @@ let final = doubleValueInRange([3, 5, 1, 8, 90, -4, 23, 1, 67],2,6);
 console.log(final);
 
 */
+
+
+
+//Task 14: Check If All Elements of the First Array Exist in the Second Array
+//Write a function that checks whether every element of the first array is present in the second array.
+//console.log(isSubset([3, 4, 1, 3], [8, 9, 3, 1, 11, 4, 3]));
+// Output: true
+
+
+
+function isSubset (a, b) {
+    for (let i = 0; i < a.length; i++) {
+        let result = false;
+
+        for (let j = 0; j < b.length; j++) {
+            if (a[i] === b[j]) {
+                result = true;
+            };
+        };
+            if (!result) {
+                return false;
+        };
+    };
+
+    return true;
+ };
+
+ console.log(isSubset([3, 4, 1, 3], [8, 9, 3, 1, 11, 4, 3]));
