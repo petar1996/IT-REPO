@@ -161,8 +161,8 @@ function validatePassword(password, successCallback, errorCallback) {
 
 // 1. jedan od nacina al nije tacan jer glavna funckija ima samo console log.
 
-/*
 
+/*
     function filterArray(array, callback) {
 
         console.log(callback(array))
@@ -188,9 +188,93 @@ function validatePassword(password, successCallback, errorCallback) {
     };
 
 
-    filterArray([1,2,3,4,5,6], isOdd)
-
-    */
+    filterArray([1,2,3,4,5,6], isOdd) 
 
 
-    
+
+*/
+
+
+// Task 8: Check if a String Contains the Digit '5'
+//Write a function that checks if a given string contains the digit 5.
+//console.log(containsFive("1b895abd")); // true
+//console.log(containsFive("1bser9re")); // false
+
+
+/*
+
+
+function hasFive(string) {
+
+    function callback(num) {
+        return num === '5'; 
+    }
+
+    for (let i = 0; i < string.length; i++) {
+        if (callback(string[i])) {  
+            return true; 
+        }
+    }
+
+    return false; 
+}
+
+
+console.log(hasFive("Ada5m6Ad5am")); // true
+
+*/
+
+
+
+
+//Task 9: Replace 'JS' with '**' in a String
+//Write a function that replaces all appearances of 'JS' in a string with '**'.
+
+//console.log(replaceJS("Programming in JS is super interesting!"));
+// Output: "Programming in ** is super interesting!"
+
+
+/*
+
+function changeStr(string,callback){
+
+
+let result = callback (string);
+
+console.log(result);
+
+console.log ("it's done !");
+
+
+   
+};
+
+
+function replaceStr (string) {
+
+    let newStr=""
+
+    for (let i = 0 ; i < string.length ; i++) {
+
+        if(string[i]==="J" && string[i+1]==="S") {
+
+            newStr +='**';
+
+            i++;
+            
+
+        } else {
+
+            newStr += string[i];
+        }
+
+    }
+
+    return newStr;
+
+};
+
+
+changeStr("JS menjaj JS menjaj JS", replaceStr);
+
+*/
