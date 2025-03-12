@@ -451,7 +451,6 @@ console.log(final);
 // Output: true
 
 
-
 function isSubset (a, b) {
     for (let i = 0; i < a.length; i++) {
         let result = false;
@@ -470,3 +469,15 @@ function isSubset (a, b) {
  };
 
  console.log(isSubset([3, 4, 1, 3], [8, 9, 3, 1, 11, 4, 3]));
+
+ 
+
+
+
+ //Task 15: Sort an Array by the Number of 'a' Characters
+//Write a function that sorts an array based on the number of occurrences of the letter 'a' or 'A'.
+//console.log(sortByLetterA(['apple', 'tea', 'amazing', 'morning', 'JavaScript']));
+// Output: ['morning', 'apple', 'tea', 'JavaScript', 'amazing']
+
+
+
