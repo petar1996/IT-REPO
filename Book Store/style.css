@@ -1,0 +1,33 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RobotoMono', monospace;
+  }
+
+  @font-face {
+    font-family: 'RobotoMono';
+    src: url('./fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  }
+
+
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #4a4e69;
+    z-index: 1000;
+    color: #fff;
+  }
+
+
+  
+.pages {
+
+  
+
+
+
+}

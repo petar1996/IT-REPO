@@ -1,0 +1,250 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RobotoMono', monospace;
+  }
+
+  @font-face {
+    font-family: 'RobotoMono';
+    src: url('./fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('./img/bg-seamless-1.webp');
+    background-repeat: repeat;
+    background-size: 500px;
+    background-attachment: fixed;
+  }
+  
+  .header {
+    background: #4a4e69;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    height: 60px;
+  }
+
+  main {
+    min-height: calc(100vh - 120px);
+    padding: 2rem;
+  }
+  
+  .nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  .banner {
+    background: #222;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    opacity: 0.9;
+    background-image: url('./img/bg-seamless-2.webp');
+    background-repeat: repeat;
+    background-size: 270px;
+  }
+
+  .banner-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 12px;
+
+  }
+
+  .about {
+    margin-bottom: 1rem;
+  }
+
+  .announcement {
+    margin-top: 1rem;
+  }
+
+  .about, .announcement {
+    background: #4a4e69;
+    border-radius: 12px;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .book-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .book-img {
+    background: #ddd;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid #4a4e69;
+  }
+
+  .book {
+    width: 200px;
+  }
+
+  .book-info {
+    border-radius: 12px;
+    padding: 0.3rem 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .book-info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .map {
+    border: 2px solid #4a4e69;
+    border-radius: 12px; 
+    margin-top: 1rem;
+  }
+
+  .map iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+  }
+
+  button {
+    width: 150px;
+    padding: 0.5rem;
+    color: #fff;
+    border: none;
+    background-color: #4a4e69;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid #4a4e69;
+  }
+
+  .field-group {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .field {
+    width: 100%;
+  }
+  
+  .price {
+    color: #4a4e69;
+    font-weight: bold;
+  }
+  
+  .contact-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  .featured-books h2 {
+    margin-bottom: 16px;
+  }
+
+  .catalog h1 {
+    margin-bottom: 16px;
+  }
+  
+  .footer {
+    background: #4a4e69;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    height: 60px;
+  }
+
+  .menu-checkbox {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 500px) {
+    .menu-toggle {
+        display: block;
+      }
+
+    .field-group {
+      display: block;
+    }
+
+    .featured-books h2 {
+      text-align: center;
+    }
+
+    .catalog h1 {
+      text-align: center;
+    }
+
+    .banner-text h1, .about h2, .announcement h2 {
+      font-size: 1rem;
+    }
+
+    .banner-text p, .about p, .announcement p, .footer p {
+      font-size: 0.8rem;
+    }
+
+    .nav {
+    display: none;
+    flex-direction: column;
+    background: #4a4e69;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+    }
+
+    .menu-checkbox:checked + .menu-toggle + .nav {
+    display: flex;
+    }
+
+    .nav a {
+    margin: 0.5rem 0;
+    }
+  
+    .book-grid {
+      grid-template-columns: 1fr;
+    }
+  }
