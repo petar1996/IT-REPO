@@ -401,4 +401,64 @@ console.log("Task 18: ", untilMyBirthday());
 // Input: 8:22:13, 11:43:22
 // Output: 3 hours 21 minutes 9 seconds
 
+/*
 
+ const tripDuration = function (departure , arrival){
+
+    departure = departure.split(":");
+
+    arrival = arrival.split(":");
+
+    const startHours = parseInt(departure[0]);  
+    const startMinutes = parseInt(departure[1]);
+    const startSeconds = parseInt(departure[2]);
+
+
+    const endHours = parseInt(arrival[0]);
+    const endMinutes = parseInt(arrival[1]);
+    const endSeconds = parseInt(arrival[2]);
+
+
+    const departureSeconds = startHours * 3600 + startMinutes * 60 + startSeconds;
+
+    const arrivalSeconds = endHours * 3600 + endMinutes * 60 + endSeconds;
+
+    
+    const tripDurationResult = arrivalSeconds - departureSeconds;
+
+    const hours = Math.floor(tripDurationResult / 3600);
+    const minutes = Math.floor((tripDurationResult % 3600) / 60);
+    const seconds = tripDurationResult % 60;
+
+    return hours + " hours " + minutes + " minutes " + seconds + " seconds";
+
+ 
+};
+
+console.log (tripDuration('8:22:13','11:43:22'));
+
+
+*/
+
+
+//20. 
+//3D Point Constructor
+//Create a constructor function for points in space with x, y, and z.
+
+/*
+
+function Point(x, y, z) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+}
+
+Point.prototype.printPoints = function() {
+    console.log("X:", this.x, "Y:", this.y, "Z:", this.z);
+};
+
+const newPoint = new Point(3, 5.2, 4);
+console.log(newPoint.x + ", " + newPoint.y + ", " + newPoint.z); // Output: 3, 5.2, 4
+newPoint.printPoints(); // Output: X: 3 Y: 5.2 Z: 4
+
+*/
