@@ -461,4 +461,47 @@ const newPoint = new Point(3, 5.2, 4);
 console.log(newPoint.x + ", " + newPoint.y + ", " + newPoint.z); // Output: 3, 5.2, 4
 newPoint.printPoints(); // Output: X: 3 Y: 5.2 Z: 4
 
+
+*/
+
+//21
+//Distance Between Points
+//Write a function that calculates distance between two 3D points.
+
+/*
+
+
+function Points(x, y, z) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+    this.printPoints = function() {
+        console.log("X:", this.x, "Y:", this.y, "Z:", this.z);
+    };
+}
+
+const newPoint = new Points(3, 5.2, 4);
+console.log(newPoint.x + ", " + newPoint.y + ", " + newPoint.z);
+newPoint.printPoints();
+
+// 21. Distance Between Points
+function calculateDistance(point1, point2) {
+    const dx = point2.x - point1.x;
+    const dy = point2.y - point1.y;
+    const dz = point2.z - point1.z;
+
+    return Math.sqrt(dx * dx + dy * dy + dz * dz);
+}
+
+// Test with two more points
+const pointA = new Points(1, 2, 3);
+const pointB = new Points(4, 6, 8);
+
+pointA.printPoints();
+pointB.printPoints();
+
+const distance = calculateDistance(pointA, pointB);
+console.log("Distance between pointA and pointB:", distance);
+
+
 */
