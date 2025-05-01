@@ -391,6 +391,14 @@ const untilMyBirthday = function() {
 
 console.log("Task 18: ", untilMyBirthday());
 
+*/
 
-*\
+
+
+//19. 
+// Trip Duration
+// Calculate trip time from departure to arrival.
+// Input: 8:22:13, 11:43:22
+// Output: 3 hours 21 minutes 9 seconds
+
 
