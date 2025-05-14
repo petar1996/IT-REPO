@@ -6,12 +6,12 @@
     const cat =  {
 
         name  : "Whiskers",              //Defining basic Object
-        color : "black"
-        legs  :   4;
+        color : "black",
+        legs  :   4,
         action : ["meow", "sleep", "purr"]
 
 
-git 
+
     };
 
 
