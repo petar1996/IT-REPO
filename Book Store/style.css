@@ -1,33 +1,38 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'RobotoMono', monospace;
-  }
-
-  @font-face {
-    font-family: 'RobotoMono';
-    src: url('./fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
-  }
-
-
-
-  .navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #4a4e69;
-    z-index: 1000;
-    color: #fff;
-  }
-
-
-  
-.pages {
-
-  
-
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'RobotoMono', monospace;
 }
+
+.header {
+  display: flex;                /* Flexbox raspored */
+  justify-content: space-between; /* Razmak između elemenata */
+  align-items: center;           /* Poravnanje na vertikali */
+  width: 100%;                   /* Širina na 100% za ceo ekran */
+  height: 60px;                  /* Precizna visina header-a */
+  background-color: #222;        /* Tamna pozadina */
+  color: #fff;                  /* Bela boja za tekst */
+  padding: 0 1.5rem;             /* Bela boja za tekst */
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('./img/bg-seamless-1.webp');
+    background-repeat: repeat;
+    background-size: 500px;
+    background-attachment: fixed;
+  }
+
+.nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+
+
+  
