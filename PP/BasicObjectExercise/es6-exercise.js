@@ -76,3 +76,12 @@ const filterJsString = arrayOfString => arrayOfString.filter ( element => elemen
 
 console.log ("Task5 :", filterJsString(['compiler', 'transpiler', 'babel.js', 'JS standard', 'linter']));
 */
+
+//6. Filter Integers
+//Write a function that filters all integer numbers from the array.
+//Input: [1.6, 11.34, 9.23, 7, 3.11, 8]
+ // Output: [7, 8]
+
+ const filterInteger = array => array.filter( element => Number.isInteger(element));
+
+ console.log ("Task 6:", filterInteger([1.6, 11.34, 9.23, 7, 3.11, 8]));
