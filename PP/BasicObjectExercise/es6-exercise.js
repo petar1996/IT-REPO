@@ -50,4 +50,29 @@ console.log ("Task 3:", mapElementIncrease([1,2,4,5,6],));
 
 */
 
-//4. 
+
+
+//4. Filter Even Elements
+//Write a function that filters all even elements from the array.
+
+
+/*
+
+const filterEven = (array) => array.filter( item => item % 2 === 0 );
+
+console.log(filterEven([1, 2, 3, 4, 5, 6]));
+
+*/
+
+
+//5. Filter JS Strings
+//Write a function that filters strings containing 'JS' or 'js'.
+//Input: ['compiler', 'transpiler', 'babel.js', 'JS standard', 'linter']
+//  Output: ['babel.js', 'JS standard']
+
+
+/*
+const filterJsString = arrayOfString => arrayOfString.filter ( element => element.toLowerCase().includes("js"));
+
+console.log ("Task5 :", filterJsString(['compiler', 'transpiler', 'babel.js', 'JS standard', 'linter']));
+*/
