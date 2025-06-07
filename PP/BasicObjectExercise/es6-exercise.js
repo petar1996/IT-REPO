@@ -77,11 +77,51 @@ const filterJsString = arrayOfString => arrayOfString.filter ( element => elemen
 console.log ("Task5 :", filterJsString(['compiler', 'transpiler', 'babel.js', 'JS standard', 'linter']));
 */
 
+
+
 //6. Filter Integers
 //Write a function that filters all integer numbers from the array.
 //Input: [1.6, 11.34, 9.23, 7, 3.11, 8]
- // Output: [7, 8]
+ // Output: [7, 8]add
+
+
 
  const filterInteger = array => array.filter( element => Number.isInteger(element));
 
  console.log ("Task 6:", filterInteger([1.6, 11.34, 9.23, 7, 3.11, 8]));
+
+
+
+
+//7. Filter Integers with Digit 5
+//Write a function that filters all integer arguments that contain digit 5.
+//Input: 23, 11.5, 9, 'abc', 45, 28, 553
+//  Output: [45, 553]
+
+
+
+/*
+// Using rest operator 
+
+const filterIntegersWithFive = (...args) =>
+  args.filter(element => Number.isInteger(element) && element.toString().includes('5'));
+
+console.log(filterIntegersWithFive(23, 11.5, 9, 'abc', 45, 28, 553));
+
+*/
+
+/*
+
+// Without rest operator, usual way.
+
+const filterIntegersWithFive = (array) =>
+  array.filter(element => Number.isInteger(element) && element.toString().includes('5'));
+
+console.log(filterIntegersWithFive([23, 11.5, 9, 'abc', 45, 28, 553]));
+
+*/
+
+
+
+
+
