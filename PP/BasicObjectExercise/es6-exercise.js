@@ -85,10 +85,12 @@ console.log ("Task5 :", filterJsString(['compiler', 'transpiler', 'babel.js', 'J
  // Output: [7, 8]add
 
 
-
+/*
  const filterInteger = array => array.filter( element => Number.isInteger(element));
 
  console.log ("Task 6:", filterInteger([1.6, 11.34, 9.23, 7, 3.11, 8]));
+ 
+ */
 
 
 
@@ -113,7 +115,7 @@ console.log(filterIntegersWithFive(23, 11.5, 9, 'abc', 45, 28, 553));
 /*
 
 // Without rest operator, usual way.
-
+git 
 const filterIntegersWithFive = (array) =>
   array.filter(element => Number.isInteger(element) && element.toString().includes('5'));
 
@@ -124,4 +126,26 @@ console.log(filterIntegersWithFive([23, 11.5, 9, 'abc', 45, 28, 553]));
 
 
 
+//8. Indexes Greater Than 10
+//Write a function that returns indexes of elements greater than 10.
+//Input: [1.6, 11.34, 29.23, 7, 3.11, 18]
+//  Output: [1, 2, 5]
 
+/*
+
+const indexOfGreater10 = array => array.reduce((acc, element, index ) => {
+
+
+if (element > 10 ) {
+
+
+    acc.push(index);
+};
+
+    return acc;
+
+}, []);
+
+console.log ("Task 8:", indexOfGreater10 ([1,20,3,11,4]));
+
+*/
